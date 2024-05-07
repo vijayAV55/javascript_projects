@@ -1,0 +1,34 @@
+
+
+1. Simple Alert Message: Create an alert that displays a greeting message when the page loads.
+
+2. Confirm Box: Use a confirm box to ask the user if they want to proceed with a certain action. Based on their response, display a corresponding message using an alert.
+
+3. Prompt Input: Ask the user for their name using a prompt box. Then display a personalized greeting using an alert.
+
+4. Conditional Greeting: Depending on the time of day (morning, afternoon, evening), display a different greeting message using alerts.
+
+5. Temperature Converter: Ask the user for a temperature in Celsius using a prompt. Convert it to Fahrenheit and display the result in an alert.
+
+6. Age Verification: Ask the user for their age using a prompt. Then, using a conditional statement, display a message if they are eligible or not eligible for a certain activity (e.g., driving, voting).
+
+7. Simple Calculator: Prompt the user to enter two numbers. Perform addition, subtraction, multiplication, and division based on their input and display the results using alerts.
+
+8. Password Prompt: Ask the user to enter a password using a prompt. If the password matches a predefined value, display a success message; otherwise, display an error message.
+
+9. Guessing Game: Generate a random number between 1 and 100. Prompt the user to guess the number. Provide feedback if their guess is too high, too low, or correct. Allow multiple guesses until they guess correctly.
+
+10. Grade Calculator: Prompt the user to enter their marks for a test. Based on their marks, display their grade (A, B, C, etc.) using alerts.
+
+11. BMI Calculator: Ask the user for their weight and height using prompts. Calculate their Body Mass Index (BMI) and display it along with a message indicating their weight status (underweight, normal weight, overweight, obese).
+
+12. FizzBuzz Game: Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers that are multiples of both three and five, print "FizzBuzz".
+
+13. Number Checker: Prompt the user to enter a number. Use conditional statements to check if the number is positive, negative, or zero, and display the result using an alert.
+
+14. Login System: Implement a simple login system using prompts. Ask the user for their username and password. If they enter the correct credentials, display a welcome message; otherwise, display an error message.
+
+15. Color Picker: Ask the user to choose a color using a prompt (provide a list of options). Based on their selection, display a message using an alert with a corresponding description of the color.
+
+
+

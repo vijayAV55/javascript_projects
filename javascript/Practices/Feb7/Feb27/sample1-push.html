@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addAValue()">Add A Value</button>
+    <script>
+        function addAValue() {
+            var students = ["Ram", "Sam", "Siva"];
+            // var students = [{ name: "Ram" }, { name: "Sam" }] // Array Of Objects 
+            students.push("Kiran");
+
+            for (i = 0; i < students.length; i++) {
+                document.write(students[i] + "<br/>")
+            }
+        }
+    </script>
+</body>
+
+</html>

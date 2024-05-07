@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    var userHeight = Number(prompt("Enter your height in meters:"));
+    var userWeight = Number(prompt("Enter your weight in kg: "));
+
+    var BMI = userWeight/(userHeight*userHeight);
+    console.log(BMI)
+
+//     Below 18.5: Underweight
+// 18.5—24.9: Healthy weight
+// 25.0—29.9: Overweight
+// 30.0 and above: Obesity
+
+if(BMI < 18.5){
+    document.write("You are Underwight ")
+}else if(BMI >= 18.5 && BMI <= 24.9){
+    document.write("You are Healthy weight ")
+}else if(BMI > 24.9 && BMI <= 29.9){
+    document.write("You are Overweight  ")
+}else{
+    document.write("You are Obesity  ")
+}
+    </script>
+</body>
+</html>
