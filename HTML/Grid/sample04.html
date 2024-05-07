@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .head {
+            height: 100px;
+            width: 960px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 360px auto;
+            margin-bottom: 60px;
+        }
+
+        .head1 img {
+            height: 60px;
+            margin-top: 15px;
+        }
+
+        .head2 {
+            display: grid;
+        }
+
+        .head2 ul {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            justify-content: space-between;
+        }
+
+        .head2 li {
+            list-style: none;
+            display: inline;
+            padding: -3px 30px 48px 0px;
+            margin: auto;
+        }
+
+        .main2 img {
+            width: 500px;
+        }
+
+        .main {
+            width: 960px;
+            margin: auto;
+            height: 500px;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .main h2 {
+            font-size: 70px;
+            margin-bottom: 10px;
+        }
+
+        .main h1 {
+            font-size: 63px;
+            margin-top: 10px;
+        }
+
+        .main h3 {
+            width: 308px;
+
+            background-color: rgb(105, 179, 228);
+            font-size: 28px;
+            height: 60px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main p {
+            margin-bottom: 20px;
+        }
+
+        .main4 h4 {
+            display: grid;
+            width: 960px;
+            margin: auto;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        .main3 {
+            width: 960px;
+            margin: auto;
+            color: #C0BAB6;
+            background-color: #232323;
+            height: 70px;
+        }
+
+        .main3 ul {
+            display: grid;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            font-size: 20px;
+            margin-left: 30px;
+            display: grid;
+            margin-top: 30px;
+        }
+
+        .table {
+            width: 1103px;
+            margin: auto;
+            margin-bottom: 60px;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            margin-top: 40px;
+            justify-content: end;
+        }
+
+        .table1 img {
+            margin-left: 25px;
+            width: 185px;
+            height: 260px;
+        }
+
+        .table0 {
+            border: 1px solid;
+            padding-left: 30px;
+            margin: 0 0 0px 10px;
+        }
+
+        .table2 {
+            margin-left: 25px;
+            width: 185px;
+            height: 260px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto auto;
+        }
+
+        .top {
+            width: 1100px;
+            margin: auto;
+            background: lightgray;
+            display: grid;
+            grid-template-columns: 200px 700px 200px;
+            height: 430px;
+            margin-bottom: 70px;
+        }
+
+        .top3 {
+            margin-top: 40px;
+        }
+
+        .top1 {
+            margin-left: 65px;
+            margin-top: 40px;
+        }
+
+        .top2 {
+            margin-top: 40px;
+
+        }
+
+        .top2 h6 {
+            display: grid;
+            justify-items: end;
+            margin: 40px 15px 0px 0px;
+            font-size: 15px;
+        }
+
+        .top2 h5 {
+            font-size: 90px;
+            margin-left: 10px;
+            margin-top: 40px;
+        }
+
+        .top2 h2 {
+            font-size: 100px;
+        }
+
+        .top2 h4 {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        #top4 h1 {
+            width: 1000px;
+            margin: auto;
+            margin-bottom: 70px;
+        }
+
+        .text1 p {
+            font-size: 16px;
+        }
+
+        .text {
+            width: 960px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        .text2 img {
+            width: 300px;
+        }
+
+        .text1 h2 {
+            margin: 33px 0 30px 0px;
+            width: 200px;
+            background: aqua;
+            height: 45px;
+            font-size: 33px;
+        }
+
+        .text1 h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .text2 img {
+            width: 510px;
+        }
+
+        .text0 {
+            width: 960px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 540px auto;
+            justify-content: space-between;
+        }
+
+        .row1 {
+            width: 1100px;
+            margin: auto;
+            background: lightgray;
+        }
+
+        .row1 p {
+            margin: 20px 0 20px 65px;
+        }
+
+        .row1 h1 {
+            margin-left: 65px;
+        }
+
+        .row img {
+            margin-left: 65px;
+            width: 960px;
+        }
+
+        .fix {
+            width: 1100px;
+            background: lavender;
+            margin: auto;
+            margin-top: 100px;
+            height: 250px;
+        }
+
+        .fix0 {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 960px;
+            justify-content: space-between;
+            margin-left: 65px;
+            margin-bottom: 120px;
+        }
+
+        .fix1 h1 {
+            font-size: 30px;
+            margin: 10px 0 0px 0px;
+        }
+
+        .fix1 h2 {
+            margin: 0px 0 10px 0px;
+        }
+
+        .fix1 img {
+            height: 210px;
+        }
+
+        .fix1 p {
+            margin-bottom: 15px;
+        }
+
+        .fix h3 {
+            padding-top: 50px;
+            border-block-end: 1px solid;
+        }
+
+        .last2 h1 {
+            margin-top: 100px;
+        }
+
+        .last2 p {
+            margin-top: 15px;
+        }
+
+        .last {
+            width: 960px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 500px;
+        }
+
+        .last2 h5 {
+            font-size: 22px;
+            margin-top: 65px;
+        }
+        .topic0 {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #333333;
+    color: #C0BAB6;
+}
+.topic1 h1 {
+    font-size: 26px;
+    padding-left: 26px;
+    margin-top: 70px;
+}
+.topic1 img {
+    margin-top: 66px;
+    margin-left: 80px;
+}
+.topic1 h4 {
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 18px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="head">
+
+        <div class="head1">
+            <img src="./jpg3.jpg" alt="">
+        </div>
+        <div class="head2">
+            <ul>
+                <li style="color: rgb(105, 179, 228);">Home</li>
+                <li>About Us </li>
+                <li>Services</li>
+                <li>Icars Choices</li>
+                <li>Gallery</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main1">
+            <h1> YOUR TRAVEL </h1>
+            
+            <h2> COMPANION </h2>
+            <p>We take pride in the high level of chauffeur service provided <br> by all of our chauffeurs and the care
+                and respect that they <br> toke in servicing the needs of our customers
+            </p>
+            <h3>Find Servicos &rarr;</h3>
+        </div>
+        <div class="main2">
+            <img src="./Untitled-4 copy.jpg565.jpg" alt="">
+        </div>
+    </div>
+    <div class="main4">
+        <h4>MOST FAVORITE</h4>
+    </div>
+    <div class="main3">
+        <ul>
+            <li style="color: rgb(105, 179, 228);">First class</li>
+            <li>Alrport Transfer</li>
+            <li>Sight seeing </li>
+            <li>Luxury</li>
+            <li>Comfort</li>
+            <li>Limousine</li>
+        </ul>
+    </div>
+    <div class="table">
+        <div class="table1"><img src="./WhatsApp Image 2023-11-19 at 11.23.15_e171e6ff.jpg" alt=""></div>
+        <div class="table2">
+            <div class="table0">&rarr;</div>
+            <div class="table0">&rarr;</div>
+        </div>
+        <div class="table1"><img src="./WhatsApp Image 2023-11-19 at 11.23.15_e171e6ff.jpg" alt=""></div>
+        <div class="table1"> <img src="./JPG 5.jpg" alt=""></div>
+        <div class="table1"> <img src="./JPG 6.jpg" alt=""></div>
+    </div>
+    <div class="top">
+        <div class="top1"><img src="./jpg7.jpg" alt=""></div>
+        <div class="top2">
+            <h4>01 we working since 1980 with 4000+ coustomer</h4>
+            <h5>YOUR TRAVEL</h5>
+            <h2>COMPANION</h2>
+            <h6>we provide services in over 50 cities pan india.02</h6>
+        </div>
+        <div class="top3"><img src="./ipg8.jpg" alt=""></div>
+    </div>
+    <div id="top4">
+        <h1>HOW ICARS WORKS</h1>
+    </div>
+    <div class="text">
+        <div class="text1">
+            <h1>Select A Car</h1>
+            <p> We take pride in the high level of chauffeur service provided <br> by all of chauffeurs and the care and
+                respect that they <br>take in servicing the needs of our customers.</p>
+            <h2> know more &rarr; </h2>
+        </div>
+        <div class="text2"> <img src="./text1.jpg" alt=""></div>
+    </div>
+    <div class="text">
+        <div class="text2"><img src="./text2.jpg" alt=""></div>
+        <div class="text1">
+            <h1> Apply offers</h1>
+            <p> We take pride in the high level of chauffeur service provided <br> by all of chauffeurs and the care and
+                respect that they <br>take in servicing the needs of our customers.</p>
+            <h2> know more &rarr; </h2>
+        </div>
+    </div>
+    <div class="text">
+
+        <div class="text1">
+            <h1> Pay & Book </h1>
+            <p> We take pride in the high level of chauffeur service provided <br> by all of chauffeurs and the care and
+                respect that they <br>take in servicing the needs of our customers.</p>
+            <h2> know more &rarr; </h2>
+        </div>
+        <div class="text2"><img src="./text3.jpg" alt=""></div>
+    </div>
+    <div class="text">
+        <div class="text2"><img src="./text2.jpg" alt=""></div>
+        <div class="text1">
+            <h1> Delivery</h1>
+            <p> We take pride in the high level of chauffeur service provided <br> by all of chauffeurs and the care and
+                respect that they <br>take in servicing the needs of our customers.</p>
+            <h2> know more &rarr; </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row1">
+            <h1> HOW ICAR WORKS </h1>
+            <P>We take pirde in the high level of chauffeur service provided <br> by all our chauffeurs.</P>
+            <img src="./jpg9.jpg" alt="">
+        </div>
+    </div>
+    <div class="fix">
+        <div class="fix0">
+            <div class="fix1">
+                <h1>QUR COMPANY PROVIDES</h1>
+                <h2>QUALITITY SERVICES</h2>
+                <P>We take pride in the high level of chauffeur services provided <br> by all of our chauffeurs.</P>
+                <h3>Email us know </h3>
+            </div>
+            <div class="fix1">
+                <img src="./jpg10.jpg" alt="">
+            </div>
+        </div>
+        <div class=" last">
+            <div class="last1">
+                <img src="./jpg11.png" alt=""> </div>
+            <div class="last2">
+                <h1>Jonthan miller</h1>
+                <h2>california, us</h2>
+                <h5>No matter which country i trawel, i always prefer i Cars</h5>
+                <p>loerm ipsum dolor sit amet, consectetuer adipicing elt. aenen commodo <br> ligul eget dolor assea.cum
+                    solices naytous penatiues it megins <br>
+                    dis parturins , nasectur ridiculus. </p>
+        </div>
+    </div>
+
+
+
+    <div class="topic">
+        <div class="topic0">
+            <div class="topic1">
+                <img src="./jpg12.png" alt="">
+                <h4> We take pride in the high level of chauffeur service</h4>
+            </div>
+            <div class="topic1">
+                <h1>Business solutions</h1>
+                <ul>
+                    <li>Corporate</li>
+                    <li>Travel Agenceies</li>
+                    <li>event management</li>
+                    <li>our fleets</li>
+                    <li>BECOME A SUPPLIER</li>
+                </ul>
+            </div>
+            <div class="topic1">
+                <h1>SERVICES</h1>
+           <ul>
+            <li>Airport transfers</li>
+            <li>Road shows</li>
+            <li>Event transfers</li>
+            <li>intercity Transfers</li>
+            <li>Intercity Transfers</li>
+            <li>FAQ</li>
+            <li>BLOGS</li>
+           </ul>
+            </div>
+            <div class="topic1">
+            <h1> TOP CITIES</h1>
+            <li>london</li>
+            <li>paris</li>
+            <li>Rame</li>
+            <li>Dubai</li>
+            <li>Istanbul</li>
+            <li>Singapore</li>
+            </div>
+            <div class="topic1">
+                <h1>LEGALS</h1>
+                <li style="margin-right:10px ;">Terms & conditions</li>
+                <li>Privacy policy</li>
+                <li>GDPR policy</li>
+                <li>CONTACT US</li>
+                <li>CHAT WITH US</li>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

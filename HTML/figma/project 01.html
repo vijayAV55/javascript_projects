@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        #mainbox {
+            width: 1440px;
+            height: 768px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            background: url(./Rectangle\ 8046\ \(2\).png);
+        }
+
+        .head1 {
+            width: 720px;
+            height: 768px;
+        }
+
+        .head2 {
+            width: 720px;
+            height: 768px;
+        }
+
+        .head1 img {
+            margin-top: 45px;
+            margin-left: 120px;
+        }
+
+        .head1 h1 {
+            margin-top: 77px;
+            margin-left: 140px;
+            font-size: 80px;
+            color: #FFFFFF;
+        }
+
+        .head1 p {
+            margin-left: 155px;
+            color: #FFFFFF;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+        .head2 ul {
+            margin-top: 55px;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #A0A0A0;
+        }
+
+        .head2 li {
+            display: inline;
+            list-style: none;
+            margin-left: 47px;
+            padding-top: 55px;
+        }
+
+        .head3 {
+            width: 440px;
+            height: 464px;
+            background-color: #FFFFFF;
+            margin-left: 190px;
+            margin-top: 110px;
+            position: relative;
+        }
+
+        .head3 h1 {
+            position: absolute;
+            font-size: 20px;
+            color: #64666B;
+            left: 16px;
+            top: 5px;
+        }
+
+        .head3 h2 {
+            width: 220px;
+            height: 52px;
+            left: 220px;
+            text-align: center;
+            border-radius: 5px;
+            position: absolute;
+            background: azure;
+            color: #64666B;
+        }
+
+        .head3 h3 {
+            background-color: #F0F2F7;
+            left: 16px;
+            position: absolute;
+            top: 60px;
+            width: 357px;
+            height: 68px;
+            padding-top: 8px;
+            padding-left: 50px;
+            border-radius: 5px;
+            color: #64666B;
+        }
+
+        .head3 h4 {
+            position: absolute;
+            left: 65px;
+            top: 100px;
+            color: #64666B;
+        }
+
+        .head4 h3 {
+            background-color: #F0F2F7;
+            left: 16px;
+            position: absolute;
+            top: 60px;
+            width: 357px;
+            height: 68px;
+            padding-top: 8px;
+            padding-left: 50px;
+            border-radius: 5px;
+            color: #64666B;
+            margin-top: 90px;
+        }
+
+        .head4 h4 {
+            position: absolute;
+            left: 65px;
+            top: 185px;
+            color: #64666B;
+        }
+
+        .head4 {
+            margin-top: 10px;
+        }
+
+        .head5 {
+            margin-top: 10px;
+        }
+
+        .head5 h3 {
+            background-color: #F0F2F7;
+            left: 16px;
+            position: absolute;
+            top: 60px;
+            width: 357px;
+            height: 68px;
+            padding-top: 8px;
+            padding-left: 50px;
+            border-radius: 5px;
+            color: #64666B;
+            margin-top: 180px;
+        }
+
+        .head5 h4 {
+            position: absolute;
+            top: 275px;
+        }
+
+        .head6 {
+            position: absolute;
+            top: 90px;
+            width: 357px;
+            height: 68px;
+            padding-top: 8px;
+            padding-left: 50px;
+            border-radius: 5px;
+            color: #64666B;
+        }
+        button {
+            width: 408px;
+            height: 48px;
+            background-color: #FCA311;
+            border-radius: 4px;
+            top: 410px;
+            position: absolute;
+            left: 16px;
+            border: none;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        
+        @media screen and (max-width:320px) {
+            #mainbox {
+                display: block;
+                width: 100%;
+            }
+
+            .head1 {
+                width: 100%;
+                padding: 0%;
+                margin: 0%;
+                margin: auto;
+            }
+
+            .head1 img {
+                padding: 0%;
+                margin: 0%;
+            }
+
+            .head1 h1 {
+                margin-left: 20px;
+                font-size: 40px;
+            }
+
+            .head1 p {
+                margin-left: 20px;
+                font-size: 11px;
+            }
+
+            .head2 {
+                width: 100%;
+            }
+
+            .head3 {
+                width: 100%;
+                margin-left: 0%;
+            }
+
+            .head3 h2 {
+                left: 89px;
+            }
+
+            .head3 h3 {
+                width: 240px;
+            }
+
+            button {
+                width: 290px;
+            }
+
+            .head4 {
+                width: 100%;
+            }
+
+            .head5 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainbox">
+        <div class="head1">
+            <img src="./Y cars logo (2).svg" alt="">
+            <h1>YOUR TRAVEL COMPANION</h1>
+
+            <p>We take pride in the high level of chauffeur service <br>provided by all of our chauffeurs and the care
+                and
+                respect <br>that they take in servicing the needs of our customers.</p>
+        </div>
+        <div class="head2">
+            <ul>
+                <li style="color:peru;">Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Icars Choices</li>
+                <li>Gallery</li>
+                <li>Contact Us</li>
+            </ul>
+            <div class="head3">
+                <h1>One way</h1>
+                <h2>By the hour</h2>
+                <h3>From </h3>
+                <h4>Address, airport, hotel, ...</h4>
+                <div class="head4">
+                    <h3>To </h3>
+                    <h4>Address, airport, hotel, ... </h4>
+                    <div class="head5">
+                        <h3>date</h3>
+                        <h4>Thu, Dec 29, 2022</h4>
+                        <div class="head6">
+                            <h3>11Am:40</h3>
+                        </div>
+                        <button> Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+
+        </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

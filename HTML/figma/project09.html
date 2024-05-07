@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .box {
+            width: 1366px;
+            height: 785px;
+           background-color:yellow;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 683px 683px;
+            position: relative;
+        }
+
+        .child1 {
+            width: 28px;
+            height: 546px;
+            border-radius: 24px;
+            background: #023047;
+            margin-left: 203px;
+            margin-top: 100px;
+        }
+
+        .child1 p {
+            width: 442px;
+            height: 100px;
+            border-radius: 24px;
+            background: #6F7DFB;
+            position: absolute;
+            left: 116px;
+            top: 135px;
+            font-family: Raleway;
+            font-size: 22px;
+            font-weight: 900;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+            padding-top: 31px;
+            text-align: center;
+        }
+
+        .child1 h1 {
+            width: 420px;
+            height: 95px;
+            background-color: yellow;
+            position: absolute;
+            left: 116px;
+            top: 237px;
+            border-radius: 24px;
+            padding-left: 25px;
+            padding-top: 35px;
+            font-family: Raleway;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #023047;
+        }
+
+        .child1 img {
+            position: absolute;
+            margin-top: 120px;
+            margin-left: 210px;
+        }
+
+        .child1 h2 {
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #023047;
+            position: absolute;
+            top: 311px;
+            left: 144px;
+        }
+
+        .child2 h1 {
+            background-color: #DA722C;
+            width: 442px;
+            height: 100px;
+            border-radius: 24px;
+            position: absolute;
+            top: 407px;
+            text-align: center;
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 27px;
+            letter-spacing: 0em;
+            color: #FFFFFF;
+            align-items: center;
+            padding-top: 20px;
+            left: 148px;
+        }
+
+        .child2 h2 {
+            width: 395px;
+            height: 85px;
+            background-color: aqua;
+            position: absolute;
+            top: 10px;
+            left: 148px;
+            font-family: Raleway;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 29px;
+            letter-spacing: 0em;
+            top: 482px;
+            border-radius: 24px;
+            padding: 25px 0px 0px 47px;
+            font-family: Raleway;
+            color: #023047;
+        }
+        .child2 h3 {
+            position: absolute;
+            top: 540px;
+            left: 195px;
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            color: #023047;
+        }
+        .box2 h1 {
+    font-family: Raleway;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 72px;
+    letter-spacing: 0em;
+    margin-left: 120px;
+    margin-top: 187px;
+}
+        .box2 p{
+            font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 120px;
+        }
+        .box2 button{
+            width: 167px;
+height: 59px;
+border-radius: 24px;
+background: #DA722C;
+color:#FFFFFF;
+font-family: Poppins;
+font-size: 18px;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0em;
+border: none;
+margin-left: 115px;
+margin-top: 20px;
+
+
+        }
+        .child2 img {
+            position: absolute;
+            top: 465px;
+            left: 440px;
+        }
+        @media screen and (max-width:768px) {
+            .box {
+                width: 100%;
+                display: block;
+                height: 100%;
+            }
+     .child1 {
+        margin-top: 0%;
+     }
+    .child2 {
+        margin: 0%;
+        top:0%
+    }
+
+        }
+        @media screen and (max-width:320px) {
+            .box {
+                width: 100%;
+                display: block;
+                height: 100%;
+            }
+     .child1 {
+        margin-top: 0%;
+     }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="child1">
+                <p>This is a great course. It helped me a lot. Thank you :)</p>
+                <h1>Jane Cooper</h1>
+                <h2>Developer, Sony</h2>
+                <img src="./Ellipse 1 (1).svg" alt="">
+            </div>
+            <div class="child2">
+                <h1>Amazing Work! Well done!</h1>
+                <h2>Jacob Jones</h2>
+                <h3>Developer, Sony</h3>
+                <img src="./Ellipse 1 (1) (1).svg" alt="">
+            </div>
+        </div>
+        <div class="box2">
+            <h1>What our students say</h1>
+            <p>All students get access to all the videos and also the source code of <br> the projects. <br>
+                You will also have access to a private Discord channel where you can <br> discuss your doubts.</p>
+                <button>Learn More</button>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education and Experience Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="url"] {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #mainbox {
+      /* background-color:gray; */
+      display: flex;
+      width: 700px;
+    }
+
+    form {
+      width: 30%;
+    }
+
+
+    h2 {
+      color: red;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    * {
+      font-size: 10px;
+      color: rgb(205, 18, 174);
+
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Estimate Form</h2>
+  <div id="mainbox">
+    <form action="#" method="post">
+      <label for="customer_name">Customer Name:</label><br>
+      <input type="text" id="customer_name" name="customer_name"><br><br>
+
+      <label for="part_name">Part Name:</label><br>
+      <input type="text" id="part_name" name="part_name"><br><br>
+
+      <label for="part_print_number">Part Print Number:</label><br>
+      <input type="text" id="part_print_number" name="part_print_number"><br><br>
+
+      <label for="revision">Revision:</label><br>
+      <input type="text" id="revision" name="revision"><br><br>
+
+      <label for="part_number">Part Number:</label><br>
+      <input type="text" id="part_number" name="part_number"><br><br>
+
+      <label for="date_estimate">Date of Estimate:</label><br>
+      <input type="date" id="date_estimate" name="date_estimate"><br><br>
+
+      <label for="estimator_name">Estimator Name:</label><br>
+      <input type="text" id="estimator_name" name="estimator_name"><br><br>
+
+      <label for="buyer_name">Buyer Name:</label><br>
+      <input type="text" id="buyer_name" name="buyer_name"><br><br>
+
+      <label for="estimate_base_quantity">Estimate Base Quantity:</label><br>
+      <input type="number" id="estimate_base_quantity" name="estimate_base_quantity"><br><br>
+
+      <label for="scrap_percentage">Scrap Percentage:</label><br>
+      <input type="number" id="scrap_percentage" name="scrap_percentage"><br><br>
+
+      <label for="costs_associated_with_scrap">Costs Associated with Scrap:</label><br>
+      <input type="checkbox" id="material" name="material"><br>
+
+      <label for="material">Material:</label>
+      <input type="checkbox" id="tooling" name="tooling"><br>
+      <label for="tooling">Tooling:</label>
+      <input type="checkbox" id="labor" name="labor"><br>
+
+      <label for="labor">Labor:</label>
+
+      <input type="checkbox" id="non_machining" name="non_machining"><br>
+      <label for="non_machining">Non-Machining:</label>
+      <button type="button" onclick="addStudent()">Submit</button>
+
+    </form>
+    <table border="2" style="width: 100%;">
+      <thead>
+        <tr>
+          <th>CustomerName:</th>
+          <th>PartName:</th>
+          <th>PartPrintNumber:</th>
+          <th>Revision</th>
+          <th>PartNumber:</th>
+          <!-- <th>DateofEstimate:</th> -->
+          <th>EstimatorName:</th>
+          <th>BuyerName:</th>
+          <th>EstimateBaseQuantity:</th>
+          <th>ScrapPercentage:</th>
+          <th>CostsAssociatedwithScrap:</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script>
+    var students = []
+    function addStudent() {
+      const formData = {
+        customer_name: "",
+        part_name: "",
+        part_print_number: "",
+        revision: "",
+        part_number: "",
+        date_estimate: "",
+        estimator_name: "",
+        buyer_name: "",
+        estimate_base_quantity: "",
+        scrap_percentage: "",
+        CostsAssociatedwithScrap: "",
+      }
+    }
+    for (a in formData) {
+      if (a !== "estimate_base_quantity" && a !== "CostsAssociatedwithScrap") {
+        formData[a] = document.getElementById(a).value
+      }
+    }
+
+    students.push(formData)
+    displayUsers()
+    function displayUsers() {
+      document.querySelector("tbody").innerHTML = "";
+      for (i = 0; i < students.length; i++) {
+        var stdObj = students[i];
+        var myTr = document.createElement("tr")
+        for (a in stdObj) {
+          var myTd = document.createElement("td");
+          myTd.innerHTML = stdObj[a]
+          myTr.appendChild(myTd)
+        }
+        document.querySelector("tbody").appendChild(myTr)
+      }
+    }
+  </script>
+</body>
+
+</html>

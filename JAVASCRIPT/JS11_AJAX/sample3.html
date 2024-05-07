@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="date()">submit</button>
+    <script>
+        function date() {
+            var name = new XMLHttpRequest();
+            name.onreadystatechange = function () {
+                if (name.readyState == 4 && name.status == 200) {
+                    var recevivedData = JSON.parse(name.response)
+                    console.log(recevivedData);
+                }
+            }
+            const options = {
+                method: 'GET',
+                url: 'https://air-quality.p.rapidapi.com/history/airquality',
+                params: {
+                    lon: '-78.638',
+                    lat: '35.779'
+                },
+                headers: {
+                    'X-RapidAPI-Key': 'da22cfb4d5msh6cb57acc5e86fdcp15261djsnb782c3479802',
+                    'X-RapidAPI-Host': 'air-quality.p.rapidapi.com'
+                }
+            }
+            let urlWithParams = options.url + '?';
+            for (a in options.params){
+                urlWithParams = urlWithParams + a + "=" + options.params[a]+ "&"
+            }
+            urlWithParams = urlWithParams.slice(0, -1); 
+
+            name.open(options.method, urlWithParams, true);
+            name.setRequestHeader('X-RapidAPI-Key', 'da22cfb4d5msh6cb57acc5e86fdcp15261djsnb782c3479802');
+            name.setRequestHeader('X-RapidAPI-Host', 'air-quality.p.rapidapi.com');
+            name.send()
+
+        }
+    </script>
+</body>
+
+</html>

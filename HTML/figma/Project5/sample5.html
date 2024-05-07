@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #start{
+            width: 1440px;
+            height: 768px;
+            margin: auto;
+            background-image: url(./Rectangle\ 8046\ \(1\).png);
+        }
+        #go{
+            width: 1200px;
+            height: 139px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            margin-top: 40px;
+            margin-left: 120px;
+        }
+        .go1{
+         width: 100px;
+height: 48.794px;
+flex-shrink: 0;
+margin-top: 40px;
+        }
+        .go2{
+            width: 623px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            margin-top: 55px;
+        }
+        .go2 h3{
+            color: #FCA311;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 149%;
+        }
+        .go2 a{
+            color: #A0A0A0;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 149%;
+margin-left: 30px;
+text-decoration: none;
+        }
+        #lion{
+            width: 1200px;
+            height: 561px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+        .lion1{
+            width: 750px; 
+            height: 561px;
+        }
+        .lion1 h1{
+            width: 514px;
+height: 160px;
+font-family: Open Sans;
+font-size: 75px;
+font-weight: 400;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+margin-top: 32px;
+margin-left: 32px;
+        }
+        .lion1 p{
+            width: 480px;
+height: 72px;
+margin-top: 20px;
+margin-left: 32px;
+font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.05em;
+text-align: left;
+color: #FFFFFF;
+        }
+        .lion2{
+            width: 440px;
+height: 484px;
+background: #FFFFFF;
+margin-top: 49px;
+        }
+        #cat{
+            width: 440px;
+            height: 52px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+        .cat1 p{
+            width: 75px;
+            height: 28px;
+            margin-left: 16px;
+            color: #181A1F;
+font-family: Open Sans;
+font-size: 20px;
+font-style: italic;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0.15px;
+margin-top: 13px;
+        }
+        .cat2 p{
+            display: flex;
+width: 107.825px;
+height: 27px;
+flex-direction: column;
+justify-content: center;
+color: #181A1F;
+font-family: Open Sans;
+font-size: 20px;
+font-style: italic;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0.15px;
+margin-right: 96px;
+margin-top: 13px;
+        }
+        #dog{
+            width: 408px;
+            height: 65px;
+            margin: auto;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .dog1 img{
+            width: 20px;
+            height: 20px;
+         margin-top: 23px;
+         margin-left: 12px;
+         color: #FCA311;
+        }
+        .dog2 h4{
+            margin-right: 300px;
+            margin-top: 8px;
+            display: flex;
+width: 34.434px;
+height: 19px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #64666B;
+font-family: Open Sans;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.1px;
+        }
+        .dog2 p{
+            margin-top: 5px;
+            color: #64666B;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+        }
+        #pig{
+            width: 408px;
+            height: 65px;
+            margin: auto;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .pig1 img{
+            width: 20px;
+            height: 20px;
+         margin-top: 23px;
+         margin-left: 12px;
+         color: #FCA311;
+        }
+        .pig2 h4{
+            margin-right: 300px;
+            margin-top: 8px;
+            display: flex;
+width: 34.434px;
+height: 19px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #64666B;
+font-family: Open Sans;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.1px;
+        }
+        .pig2 p{
+            margin-top: 5px;
+            color: #64666B;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+        }
+        #hen{
+            width: 408px;
+            height: 65px;
+            margin: auto;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .hen1 img{
+            width: 20px;
+            height: 20px;
+         margin-top: 23px;
+         margin-left: 12px;
+         color: #FCA311;
+        }
+        .hen2 h4{
+            margin-right: 300px;
+            margin-top: 8px;
+            display: flex;
+width: 34.434px;
+height: 19px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #64666B;
+font-family: Open Sans;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.1px;
+        }
+        .hen2 p{
+            margin-top: 5px;
+            color: #64666B;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+        }
+        #cock{
+            width: 408px;
+            height: 65px;
+            margin: auto;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: auto auto;
+            }
+     #cock h3{
+        margin: auto;
+        display: flex;
+width: 48.138px;
+height: 22px;
+flex-shrink: 0;
+color: #000;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+margin-left: 50px;
+position: absolute;
+     }
+     #cock p{
+        position: absolute;
+        color: #000;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+margin-left: 100px;
+     }
+     #chick{
+        display: flex;
+width: 294.747px;
+height: 19px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #64666B;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.15px;
+margin-top: 4px;
+margin-left: 60px;
+     }
+     #choco{
+        display: flex;
+width: 408px;
+height: 48px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FCA311;
+border: #FCA311;
+margin-top: 25px;
+margin-left: 16px;
+     }
+     #choco p{
+        color: #FBFBFD;
+text-align: center;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 0px;
+     }
+     #zip{
+        height: 1145px;
+        background: #131313;
+        width: 1440px;
+            margin: auto;
+     }
+     #ox{
+        width: 1440px;
+        height: 251px;
+            margin: auto;
+     }
+     #ox p{
+        width: 640px;
+        height: 32px;
+        color: #FCA311;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 105.5%; 
+text-transform: uppercase;
+padding-top: 120px;
+margin-left: 308px;
+     }
+     #cap{
+     margin-left: 774px;
+     margin-top: 43px;
+     width: 429px;
+height: 0px;
+flex-shrink: 0;
+stroke-width: 1px;
+stroke: #FFF;
+
+}
+     #hero{
+        width: 1440px;
+            height: 521px;
+            margin: auto;
+            margin-top: 56px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+     }
+     .hero1{
+        width: 343px;
+height: 444px;
+background-image: url(./pseudo.png);
+margin-top: 38px;
+    opacity: 0.6;
+background: #000;
+background: #FFF;
+     }
+     .hero1 h4{
+        color: #212832;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 105.5%;
+margin-left: 217px;
+padding-top: 30px;
+     }
+     .hero1 img{
+        margin-top: 55px;
+     }
+     .hero1 h3{
+        color: #393D46;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 10px;
+margin-left: 50px;
+width: 200px;
+     }
+     #core{
+margin-left: 50px;
+width: 200px;
+height: 24px;
+border: 2px solid red;
+position: absolute;
+margin-top: 10px;
+     }  
+     .core1{
+        position: absolute;
+     }
+     .core1 img{
+        width: 24px;
+height: 16.934px;
+flex-shrink: 0;
+fill: #000;
+position: absolute;
+     }
+     .core1 p{
+        width: 34px;
+        height: 20px;
+        color: #3c3636;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.15px;
+     }
+     .core2{
+        position: absolute;
+     }
+     .core2 img{
+        width: 24px;
+height: 16.934px;
+flex-shrink: 0;
+fill: #000;
+position: absolute;
+     }
+     .core2 p{
+        width: 34px;
+        height: 20px;
+        color: #3c3636;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.15px;
+     }
+     #core3{
+        width: 181px;
+height: 45px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #FCA311;
+border: 2px  #FCA311;;
+margin-top: 60px;
+margin-left: 50px;
+     }
+     #core3 p{
+        color: #FFF;
+text-align: center;
+font-family: Helvetica Now Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+     }
+     .hero2{
+        width: 522px;
+height: 521px;
+background-image: url(./pseudo.png);
+background: #000;
+background: #FFF;
+     }
+     .hero2 h4{
+        width: 73px;
+        height: 24px;
+        color: #212832;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 105.5%;
+margin-left: 400px;
+padding-top: 30px;
+     }
+     .hero2 img{
+        margin-top: 55px;
+        margin-left: 59px;
+        width: 430px;
+height: 241px;
+flex-shrink: 0;
+     }
+     .hero2 h3{
+        color: #393D46;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 10px;
+margin-left: 190px;
+width: 200px;
+     }
+     #cored{
+width: 200px;
+height: 24px;
+border: 2px solid red;
+position: absolute;
+margin-top: 10px;
+margin-left: 190px;
+     }  
+     .cored1{
+        position: absolute;
+     }
+     .cored1 img{
+        width: 24px;
+height: 16.934px;
+flex-shrink: 0;
+fill: #000;
+position: absolute;
+     }
+     .cored1 p{
+        width: 34px;
+        height: 20px;
+        color: #3c3636;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.15px;
+     }
+     .cored2{
+        position: absolute;
+     }
+     .cored2 img{
+        width: 24px;
+height: 16.934px;
+flex-shrink: 0;
+fill: #000;
+position: absolute;
+     }
+     .cored2 p{
+        width: 34px;
+        height: 20px;
+        color: #3c3636;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.15px;
+     }
+     #cored3{
+        width: 181px;
+height: 45px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #FCA311;
+border: 2px  #FCA311;;
+margin-top: 60px;
+margin-left: 170px;
+     }
+     #cored3 p{
+        color: #FFF;
+text-align: center;
+font-family: Helvetica Now Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+     }
+     .hero3{
+        width: 343px;
+height: 444px;
+background-image: url(./pseudo.png);
+margin-top: 38px;
+    opacity: 0.6;
+background: #000;
+background: #FFF;
+     }
+     .hero3 h4{
+        color: #212832;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 105.5%;
+margin-left: 217px;
+padding-top: 30px;
+     }
+     .hero3 img{
+        margin-top: 55px;
+        margin-left: 50px;
+     }
+     .hero3 h3{
+        color: #393D46;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 10px;
+margin-left: 140px;
+width: 200px;
+     }
+     #core{
+margin-left: 100px;
+width: 200px;
+height: 24px;
+border: 2px solid red;
+position: absolute;
+margin-top: 10px;
+     }  
+     .core1{
+        position: absolute;
+     }
+     .core1 img{
+        width: 24px;
+height: 16.934px;
+flex-shrink: 0;
+fill: #000;
+position: absolute;
+     }
+     .core1 p{
+        width: 34px;
+        height: 20px;
+        color: #3c3636;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.15px;
+     }
+     .core2{
+        position: absolute;
+     }
+     .core2 img{
+        width: 24px;
+height: 16.934px;
+flex-shrink: 0;
+fill: #000;
+position: absolute;
+     }
+     .core2 p{
+        width: 34px;
+        height: 20px;
+        color: #3c3636;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.15px;
+     }
+     #jack3{
+        width: 181px;
+height: 45px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #FCA311;
+border: 2px  #FCA311;;
+margin-top: 60px;
+margin-left: 140px;
+     }
+     #jack3 p{
+        color: #FFF;
+text-align: center;
+font-family: Helvetica Now Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+     }
+     #case{
+        margin-top: 119px;
+        margin-left: 343px;
+        width: 429px;
+height: 0px;
+flex-shrink: 0;
+stroke-width: 1px;
+stroke: #FFF;
+
+     }
+     #hell{
+        width: 299px;
+height: 79px;
+flex-shrink: 0;
+border: 2px solid #FCA311;
+background: #131313;
+margin-left: 624px;
+margin-top: 55px;
+     }
+     #hell p{
+text-align: center;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 0px; 
+color: #FFFFFF;
+     }
+     #can{
+        width: 1440px;
+height: 1099px;
+flex-shrink: 0;
+background: #0D0D0D;
+margin: auto;
+     }
+    #run{
+        width: 978px;
+        height: 736px;
+margin-left: 246px;
+padding-top: 101px;
+margin: auto;
+display: grid;
+grid-template-columns: auto auto;
+    }
+    .run1{
+        width: 396px;
+height: 736px;
+flex-shrink: 0;
+opacity: 0.6;
+background: #000;
+    }
+    .run2{
+        width: 582.591px;
+height: 591px;
+margin: auto;
+    }
+    .run2 h1{
+        width: 404px;
+        color: #FFF;
+font-family: Open Sans;
+font-size: 58px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%; 
+height: 120px;
+margin-top: 50px;
+margin-left: 36px;
+    }
+    .run2 p{
+        width: 463px;
+        height: 96px;
+        color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 149%; 
+letter-spacing: 0.8px;
+margin-top: 23px;
+margin-left: 36px;
+    }
+    .run2 h4{
+        width: 147px;
+        margin-top: 195px;
+        color: #FFF;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 149%;
+letter-spacing: 1.2px;
+margin-left: 36px;
+    }
+    #green{
+        margin: auto;
+        margin-top: 55px;
+        margin-left: 304px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #green h1{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%;
+    }
+    #green p{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%;
+margin-right: 100px;
+}
+#green h2{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%;
+margin-right: 100px;
+}
+    #blue{
+        margin: auto;
+        margin-top: 11px;
+        margin-left: 320px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #blue p{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 149%;
+letter-spacing: 1.2px;
+    }
+    #pen{
+        width: 1440px;
+        height: 1268px;
+        background: #131313;
+            margin: auto;
+    }
+    #pen1{
+     margin: auto;
+     width: 969px;
+height: 1118px;
+flex-shrink: 0;
+
+    }
+    .cap{
+        height: 257px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        margin-top: 120px;
+    }
+    .cap1{
+        width: 645px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        height: 257px;  
+    }
+    .cap1 img{
+        margin-top: 77px;
+    }
+    .cap1 p{
+        height: 96px;
+        margin-top: 148px;
+        margin-left: 13px;
+        color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 149%; 
+letter-spacing: 0.8px;
+width: 463px;
+    }
+    .cap2 h1{
+width: 297px;
+height: 120px;
+color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%;
+    }
+    .cap2 h2{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%; 
+margin-top: 58px;
+margin-left: 176px;
+    }
+    .bap{
+        height: 204px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        }
+    .bap h2{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%; 
+margin-top: 127px;
+margin-left: 15px;
+}
+.bap p{
+        height: 96px;
+        margin-top: 95px;
+        margin-left: 190px;
+        color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 149%; 
+letter-spacing: 0.8px;
+width: 463px;
+    }
+    .bap img{
+        margin-top: 24px;
+    }
+    .dap{
+        height: 204px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        }
+        .dap img{
+        margin-top: 27px;
+    }
+    .dap p{
+        height: 96px;
+        margin-top: 95px;
+        margin-right: 250px;
+        color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 149%; 
+letter-spacing: 0.8px;
+width: 463px;
+}
+.dap h2{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%; 
+margin-top: 120px;
+margin-right: 200px;
+}
+    .eap{
+        height: 204px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        }
+    .eap h2{
+        color: #FFF;
+font-family: Open Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.5%; 
+margin-top: 127px;
+margin-left: 15px;
+}
+.eap p{
+        height: 96px;
+        margin-top: 95px;
+        margin-left: 190px;
+        color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 149%; 
+letter-spacing: 0.8px;
+width: 463px;
+    }
+    .eap img{
+        margin-top: 24px;
+    }
+    #fap{
+width: 299px;
+height: 79px;
+flex-shrink: 0;
+border: 2px solid #FCA311;
+margin-top: 240px;
+margin: auto;
+margin-left: 240px;
+background: #131313;
+    }
+    #fap p{ 
+       color:#FBFBFD;
+    }
+    #kit{
+        width: 1440px;
+height: 804px;
+flex-shrink: 0;
+background: #0D0D0D;
+margin: auto;
+
+}
+#kit1{
+    width: 1440px;
+height: 393px;
+flex-shrink: 0;
+background: url(./Rectangle\ 8097.png)
+    } 
+    @media screen and (max-width:320px){
+       #start{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+       }
+       #go{
+         width: 100%;
+         height: 100%;
+         display: block;
+       }
+       .go1 img{
+        width: 0%;
+       }
+    }
+    </style>
+</head>
+<body>
+    <div id="start" >
+        <div id="go">
+            <div class="go1"><img src="./Y cars logo.svg" alt=""></div>
+            <div class="go2">
+                <h3>Home</h3>
+                <a href="">About Us</a>
+                <a href="">Services</a>
+                <a href="">Icars Choices</a>
+                <a href="">Gallery</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+        <div id="lion">
+            <div class="lion1">
+                <h1>YOUR TRAVEL COMPANION</h1>
+                <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the care and respect that they take in servicing the needs of our customers.</p>
+            </div>
+            <div class="lion2">
+                <div id="cat">
+                    <div class="cat1"><p>One way</p></div>
+                    <div class="cat2"><p>By the hour</p></div>
+                </div>
+                <div id="dog">
+                    <div class="dog1">
+                <img src="./Frame (1).svg" alt="">
+                    </div>
+                    <div class="dog2">
+                        <h4>From</h4>
+                        <p>Address, airport, hotel, ...</p>
+                    </div>
+                </div>
+                <div id="pig">
+                    <div class="pig1"> <img src="./Frame (1).svg" alt=""></div>
+                    <div class="pig2">
+                        <h4>To</h4>
+                        <p>Address, airport, hotel, ...</p>
+                    </div>
+                </div>
+                <div id="hen">
+                    <div class="hen1"> <img src="./Frame (1).svg" alt=""></div>
+                    <div class="hen2">
+                        <h4>Date</h4>
+                        <p>Thu, Dec 29, 2022</p>
+                    </div>
+                </div>
+                <div id="cock">
+                    <h3>11 AM </h3>
+                   <p>: 40</p>
+                </div>
+                <div id="chick">
+                    <p>Chauffeur will wait 15 minutes free of charge.</p>
+                </div>
+                <button id="choco"><p>Search</p></button>
+            </div>
+        </div>
+    </div>
+    <div id="zip">
+    <div id="ox">
+        <p>Select A Car that you really need</p>
+        <div id="cap">
+            <img src="./Arrow 5 (1).svg" alt="">
+        </div>
+    </div>
+    <div id="hero">
+        <div class="hero1">
+         <h4>$651/hr</h4>
+         <img src="./197 1.png" alt="">
+         <h3>Mercedes Mayboch</h3>
+         <div id="core">
+         <div class="core1">
+            <img src="./Vector (3).sv" alt="">
+         <p>max. 3</p>
+         </div>
+         <div class="core2">
+         <img src="./Vector (4).sv" alt="">
+         <p>max. 2</p>
+         </div>
+         </div>
+         <button id="core3"> <p>Book now</p></button>
+        </div>
+        <div class="hero2">
+            <h4>$651/hr</h4>
+            <img src="./mercedes-benz-s-class-car 1.png" alt="">
+            <h3>Mercedes Mayboch</h3>
+            <div id="core">
+            <div class="cored1">
+               <img src="./Vector (3).sv" alt="">
+            <p>max. 3</p>
+            </div>
+            <div class="cored2">
+            <img src="./Vector (4).sv" alt="">
+            <p>max. 2</p>
+            </div>
+            </div>
+            <button id="cored3"> <p>Book now</p></button>
+           </div>
+        <div class="hero3">
+            <h4>$651/hr</h4>
+            <img src="./rolls-royce-ghost-black-car-2 1.png" alt="">
+            <h3>Mercedes Mayboch</h3>
+            <div id="core">
+            <div class="core1">
+               <img src="./Vector (3).sv" alt="">
+            <p>max. 3</p>
+            </div>
+            <div class="core2">
+            <img src="./Vector (4).sv" alt="">
+            <p>max. 2</p>
+            </div>
+            </div>
+            <button id="jack3"> <p>Book now</p></button>
+        </div>
+    </div>
+    <div id="case">
+        <img src="./Arrow 6.png" alt="">
+    </div>
+    <button id="hell"> <p>View more</p></button>
+    </div>
+    <div id="can">
+        <div id="run">
+            <div class="run1">
+                <img src="./Rectangle 8090.png" alt="">
+            </div>
+            <div class="run2">
+                <h1>YOUR TRAVEL
+                    COMPANION</h1>
+                    <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the care and respect that they take in servicing the needs of our customers.</p>
+                  <h4>Learn more</h4>
+                </div>
+        </div>
+        <div id="green">
+            <h1>10 Cars</h1>
+            <p>1500</p>
+            <h2>5</h2>
+        </div>
+        <div id="blue">
+           <p>Learn more</p>
+           <p>Learn more</p>
+           <p>Learn more</p>
+        </div>
+    </div>
+    <div id="pen">
+      <div id="pen1">
+        <div class="cap">
+            <div class="cap1">
+                <img src="./Rectangle 8091.png" alt="">
+                <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the care and respect that they take in servicing the needs of our customers.</p>
+            </div>
+            <div class="cap2">
+                <h1>All The 
+                    Categories</h1>
+                    <h2>1</h2>
+            </div>
+            </div>
+            <img src="./Line 32.png" alt="">
+            <div class="bap">
+            <h2>2</h2>
+            <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the care and respect that they take in servicing the needs of our customers.</p>
+            <img src="./Rectangle 8092.png" alt="">
+            </div>
+             <img src="./Line 32.png" alt="">
+            <div class="dap">
+            <img src="./Rectangle 8093.png" alt="">
+            <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the care and respect that they take in servicing the needs of our customers.</p>
+            <h2>3</h2>
+            </div>
+             <img src="./Line 32.png" alt="">
+            <div class="eap">
+            <h2>4</h2>
+            <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the care and respect that they take in servicing the needs of our customers.</p>
+            <img src="./Rectangle 8094.png" alt="">
+            </div>
+             <img src="./Line 32.png" alt="">
+
+      </div>
+      <button id="fap"> <p> View more</p></button>
+    </div>
+    <div id="kit">
+        <div id="kit1"></div>
+    </div>
+</body>
+</html>

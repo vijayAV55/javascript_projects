@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  width: 1366px;
+  height: 600px;
+  flex-shrink: 0;
+  /* background: linear-gradient(180deg, blue 10%, indigo 50%); */
+  margin: 0 auto;
+  background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+  padding-top: 42px;
+}
+
+#sticky {
+  width: 1130px;
+  height: 150px;
+  /* border: 2px solid; */
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+
+  margin: auto;
+}
+
+.head h1 {
+  color: white;
+  margin-top: 50px;
+}
+
+.head1 ul li {
+  display: inline-block;
+  padding: 20px;
+  margin-top: 40px;
+  color: white;
+}
+
+.enroll-btn {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 24px;
+  background: black;
+  color: white;
+  margin-left: 40px;
+}
+
+#content {
+  width: 1134px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  height: 72%;
+  margin-top: 13px;
+  /* border: 2px solid; */
+}
+
+.left-box {
+  /* flex: 2; */
+  padding: 10px;
+
+  width: 450px;
+  /* border: 2px solid; */
+}
+
+.right-box {
+  width: 200px;
+  /* border: 2px solid; */
+}
+
+.left-box h2 {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 125%;
+  /* 62.5px */
+  width: 457px;
+  margin-bottom: 18px;
+}
+
+.left-box p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  /* 32px */
+  width: 457px;
+  margin-bottom: 30px;
+}
+
+.left-box button {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: #da722c;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+.students {
+  width: 170px;
+  height: 70px;
+  border-radius: 24px;
+  background: #fff;
+  border: none;
+  margin-top: 80px;
+  margin-left: 30px;
+  display: grid;
+  justify-content: center;
+}
+
+.vkimg {
+  /* border: 2px solid; */
+  height: 430px;
+  width: 300px;
+  margin-right: 160px;
+}
+
+.rating {
+  width: 170px;
+  height: 70px;
+  border-radius: 24px;
+  background: #fff;
+  border: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.students h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.students p {
+  margin-bottom: 30px;
+}
+
+.rating h2 {
+  font-size: 30px;
+}
+
+.rating p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#second {
+  width: 1366px;
+  /* width: 100%; */
+  height: 600px;
+
+  margin: 0 auto;
+}
+
+.firstone {
+  width: 1136px;
+  height: 500px;
+  /* border: 2px solid; */
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.one {
+  width: 500px;
+  height: 500px;
+  /* border: 2px solid; */
+  position: absolute;
+}
+
+.bigline {
+  width: 10px;
+  height: 500px;
+  /* border: 2px solid; */
+  border-radius: 20px;
+  margin-left: 70px;
+  background-color: black;
+}
+
+.two {
+  width: 400px;
+  height: 200px;
+  /* border: 2px solid; */
+  margin-top: 30px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.4);
+}
+
+.two button {
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+}
+
+.two h2 {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.two h3 {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.four {
+  width: 400px;
+  height: 200px;
+  /* border: 2px solid; */
+  margin-top: 270px;
+  border-radius: 20px;
+  margin-left: 35px;
+  position: absolute;
+  background-color: aliceblue;
+  box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.4);
+}
+.four button {
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: orangered;
+  border: none;
+  color: white;
+}
+.four h2 {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 30px;
+}
+.four h3 {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.three {
+  width: 550px;
+  height: 500px;
+  /* border: 2px solid; */
+}
+
+.three h1 {
+  font-size: 50px;
+  margin-top: 90px;
+}
+
+.three p {
+  margin-top: 10px;
+}
+
+.three button {
+  width: 120px;
+  margin-top: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: orangered;
+  padding: 15px;
+  color: white;
+}
+
+.girlimg {
+  position: absolute;
+}
+
+#cortoon {
+  width: 1365px;
+  height: 520px;
+  border: 1px solid white;
+  margin: auto;
+  background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+  /* background: linear-gradient(180deg, blue 10%, indigo 50%); */
+}
+
+#cortoon h1 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  /* border: 2px solid black; */
+}
+
+.cortoon1 {
+  height: 350px;
+  width: 1134px;
+  /* border: 2px solid; */
+  margin: auto;
+  margin-top: 40px;
+}
+
+.micky {
+  height: 250px;
+  width: 500px;
+  /* border: 2px solid; */
+  float: left;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.micky h4 {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.game {
+  width: 500px;
+  height: 250px;
+  /* border: 2px solid; */
+  float: right;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.cortoon1 button {
+  color: white;
+  background-color: orangered;
+  width: 130px;
+  border-radius: 20px;
+  border: none;
+}
+
+.bt {
+  height: 60px;
+  width: 1134px;
+
+  margin: auto;
+  margin-top: 270px;
+  display: grid;
+  justify-content: end;
+}
+
+.bt button {
+  height: 50px;
+  margin-top: 30px;
+}
+
+.class1 {
+  height: 150px;
+  width: 400px;
+  /* border: 2px solid; */
+  margin: auto;
+  border-radius: 20px;
+}
+
+.class2 {
+  height: 8px;
+  width: 400px;
+
+  margin: auto;
+  border-radius: 10px;
+  background-color: black;
+  margin-top: 40px;
+}
+
+.game1 {
+  height: 150px;
+  width: 400px;
+  /* border: 2px solid; */
+  margin: auto;
+  border-radius: 20px;
+}
+
+.game2 {
+  height: 8px;
+  width: 400px;
+
+  margin: auto;
+  border-radius: 10px;
+  background-color: black;
+  margin-top: 22px;
+}
+
+.game h4 {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+#google {
+  width: 1364px;
+  height: 280px;
+  /* border: 2px solid; */
+  margin: auto;
+}
+
+.app {
+  height: 200px;
+  width: 700px;
+  /* border: 2px solid; */
+  margin: auto;
+  margin-top: 50px;
+}
+
+.app h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.app p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.black {
+  height: 50px;
+  width: 200px;
+  /* border: 2px solid black; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+.white {
+  height: 50px;
+  width: 200px;
+  color: white;
+  /* border: 2px solid black; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.red {
+  width: 450px;
+  height: 50px;
+  /* border: 2px solid; */
+  margin-top: 50px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#link {
+  height: 300px;
+  width: 1364px;
+  /* border: 2px solid; */
+  margin: auto;
+  margin-top: 50px;
+  background-color: black;
+  color: white;
+}
+
+.link1 {
+  height: 150px;
+  width: 1134px;
+  /* border: 2px solid ; */
+  margin: auto;
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+
+.a {
+  height: 150px;
+  width: 300px;
+  /* border: 2px solid black; */
+}
+
+.b {
+  height: 150px;
+  width: 300px;
+  /* border: 2px solid black; */
+}
+
+.c {
+  height: 150px;
+  width: 500px;
+  /* border: 2px solid black; */
+  background-color: black;
+}
+
+.a ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.b ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.c ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.a ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.b ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.c ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.de {
+  height: 40px;
+  width: 1134px;
+  margin: auto;
+}
+
+.vijay {
+  height: 40px;
+  width: 1134px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+

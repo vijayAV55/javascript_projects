@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mainbox {
+            width: 700px;
+            height: 700px;
+            border: 2px solid red;
+            position: relative;
+            margin: auto;
+
+
+
+        }
+
+        .childbox1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rebeccapurple;
+            background: url(./img1.png);
+
+        }
+
+        .childbox2 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid gold;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(./img1.png);
+            background-position: 900px  200px;
+
+        }
+
+        .childbox3 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid skyblue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(./img1.png);
+            background-position: 900px  400px;
+            
+
+
+        }
+
+        .childbox4 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rebeccapurple;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: url(./img1.png);
+            background-position: 200px  200px;
+          
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainbox">
+
+        <div class="childbox1"></div>
+        <div class="childbox2"></div>
+        <div class="childbox3"></div>
+        <div class="childbox4"></div>
+
+
+
+
+    </div>
+</body>
+
+</html>

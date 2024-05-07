@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="servardata()">addserver</button>
+    <script>
+        function servardata() {
+            var date = new XMLHttpRequest();
+            date.onreadystatechange = function () {
+                if (date.readyState == 4 && date.status == 200) {
+                    var name = JSON.parse(date.response)
+                    console.log(name);
+                }
+            }
+            const options = {
+  method: 'GET',
+  url: 'https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchAirport',
+  params: {query: 'london'},
+  headers: {
+    'X-RapidAPI-Key': 'da22cfb4d5msh6cb57acc5e86fdcp15261djsnb782c3479802',
+    'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
+  }
+};
+        let urlWithParams = options.url + '?';
+            for (a in options.params){
+                urlWithParams = urlWithParams + a + "=" + options.params[a]+ "&"
+            }
+            urlWithParams = urlWithParams.slice(0, -1); 
+
+            date.open(options.method, urlWithParams, true);
+            date.setRequestHeader('X-RapidAPI-Key', 'da22cfb4d5msh6cb57acc5e86fdcp15261djsnb782c3479802');
+            date.setRequestHeader('X-RapidAPI-Host', 'tripadvisor16.p.rapidapi.com');
+            date.send()
+        }
+       
+
+    </script>
+</body>
+
+</html>

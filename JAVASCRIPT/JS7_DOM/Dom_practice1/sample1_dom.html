@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+   <div id="head">
+    <form>
+        <label for="fname">First Name : </label> 
+        <input type="text" name="vijay" id="vijay"> <br>
+        <label for="lname">Last Name : </label> 
+        <input type="text" name="ram" id="ram"> <br>
+        <button type="button" onclick="names()">Login</button>  
+    </form>
+   </div>
+   <script>
+     function names(){
+              var user = {
+                fname :document.getElementById('vijay').value,
+                lname :document.getElementById('ram').value,
+              }
+              console.log(user)
+     }
+
+
+
+   </script>
+</body>
+</html>

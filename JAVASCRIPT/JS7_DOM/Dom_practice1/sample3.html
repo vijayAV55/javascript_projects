@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="firstname">firstname</label>
+        <input type="text" name="firstname" id="firstname"><br>
+        <label for="lastname">lastname</label>
+        <input type="text" name="lastname" id="lastname"><br>
+        <button type="button" onclick="names()">Login</button>
+    </form>
+    <script>
+        function names(){
+          var users = {
+            firstname :document.querySelectorAll('#firstname')[0].value,
+            lastname :document.querySelectorAll('#lastname')[0].value,
+          }
+         console.log (users)
+        }
+
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .header {
+            width: 1440px;
+            height: 88px;
+            background-color: #FFFFFF;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            position: absolute;
+            margin-top: 28px;
+            margin-left: 96px;
+        }
+
+        .header img {
+            margin-top: 30px;
+            margin-left: 210.1px;
+        }
+
+        .nav li {
+            display: inline;
+            margin-top: 15px;
+            margin-left: 50px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #131316;
+        }
+
+        .nav ul {
+            padding-top: 35px;
+            padding-right: 100px;
+            margin-left: 12px;
+        }
+
+        .nav button {
+            width: 70px;
+            height: 35px;
+            border-radius: 10px;
+        }
+
+        .head {
+            width: 1440px;
+            height: 800px;
+            margin: auto;
+            background-color: #FFFFFF;
+            position: relative;
+        }
+
+        .head h2 {
+            font-family: Poppins;
+            font-size: 64px;
+            font-weight: 500;
+            line-height: 70px;
+            letter-spacing: -2px;
+            text-align: left;
+            width: 824px;
+            height: 140px;
+            padding-top: 72px;
+            padding-left: 96px;
+        }
+
+        .head h3 {
+            padding-left: 96px;
+            padding-top: 24px;
+            font-family: Poppins;
+            font-size: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #131316;
+        }
+
+        .head button {
+            border-radius: 16px;
+            margin-left: 96px;
+            margin-top: 40px;
+            width: 166px;
+            height: 56px;
+            background: #4891FF;
+            color: #FFFFFF;
+            position: absolute;
+        }
+
+        .h4 {
+            width: 138px;
+            height: 38px;
+            background-color: #F5F5F5;
+            margin-left: 280px;
+            margin-top: 40px;
+            padding-top: 18px;
+            padding-left: 20px;
+            border-radius: 10px;
+            position: absolute;
+            font-size: 16px;
+        }
+
+        .h4 img {
+            position: absolute;
+        }
+
+        .h4 h1 {
+            font-size: 16px;
+            padding-left: 30px;
+            padding-top: 3px;
+        }
+
+        .h5 img {
+
+            position: absolute;
+            left: 1155px;
+            top: 250px;
+        }
+
+        .h6 img {
+            margin-left: 730px;
+            position: absolute;
+        }
+
+        .h6 h1 {
+            margin-left: 790px;
+            color: white;
+            position: absolute;
+            margin-top: 25px;
+        }
+
+        .top {
+            width: 612px;
+            height: 272px;
+            border-radius: 16px;
+            border: 1px;
+            border: 1px solid #FFFFFF;
+            margin-top: 160px;
+            margin-left: 96px;
+            background-color: #FFFFFF;
+            display: grid;
+            grid-template-columns: 200px auto;
+        }
+
+        .top1 h1 {
+            margin-left: 36px;
+            margin-top: 20px;
+        }
+
+        .top1 h5 {
+            width: 159px;
+            height: 30px;
+            font-size: 10px;
+            margin-left: 36px;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .top2 {
+            position: relative;
+            height: 205px;
+            width: 2px;
+            margin-left: 100px;
+        }
+
+        .top3 {
+            width: 213px;
+            height: 48px;
+            background: #F5F5F5;
+            margin-top: 60px;
+            border-radius: 10px;
+            position: absolute;
+        }
+
+        .top3 img {
+            margin-top: 5px;
+            margin-left: 20px;
+            border-radius: 40px;
+            position: absolute;
+        }
+
+        h6 {
+            margin-left: 70px;
+            margin-top: 20px;
+            font-size: 10px;
+        }
+
+        .top4 {
+            width: 213px;
+            height: 48px;
+            background: #F5F5F5;
+            margin-top: 125px;
+            border-radius: 10px;
+            position: absolute;
+            margin-left: 70px;
+            position: absolute;
+        }
+
+        .top4 img {
+            margin-top: 5px;
+            margin-left: 20px;
+            border-radius: 40px;
+            position: absolute;
+        }
+
+        .top h7 {
+            margin-left: 100px;
+            font-size: 10px;
+            margin-top: 20px;
+            position: absolute;
+        }
+
+        .top5 {
+            width: 213px;
+            height: 48px;
+            background: #DAF4FE;
+            margin-top: 180px;
+            border-radius: 10px;
+            position: absolute;
+            margin-left: 70px;
+        }
+
+        .top5 img {
+            margin-top: 5px;
+            margin-left: 20px;
+            border-radius: 40px;
+            position: absolute;
+        }
+
+        .top5 h4 {
+            margin-left: 125px;
+            font-size: 10px;
+            margin-top: 20px;
+        }
+
+        .top6 {
+            width: 190px;
+            height: 190px;
+            border-radius: 16px;
+            background-color: #DAF4FE;
+            margin-left: 757px;
+            margin-top: 60px;
+        }
+
+        .top6 h1 {
+            padding-top: 30px;
+            font-size: 16px;
+            padding-left: 55px;
+        }
+
+        .top6 p {
+            margin-left: 30px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .top6 h9 {
+            margin-left: 50px;
+        }
+        @media screen and (max-width:320px){
+    .header{
+        width: 100%;
+        display: block;
+    }
+    .header h1{
+        margin-left: 16px;
+    }
+    .header img{
+        position: absolute;
+        margin-left: 128px;
+    }
+    .nav{
+        width: 100%;
+    }
+    .head{
+        width: 100%;
+    }
+    .head h2{
+        width: 100%;
+        margin-left: 16px;
+        padding-left: 0px;
+        font-size: 36px;
+        font-weight: 0%;
+        line-height: 50px;
+
+    }
+    .head h3{
+        padding-left: 16px; 
+        font-size: 18px;  
+
+    }
+
+    .h4{
+        width: 100%;
+    }
+    .top{
+        width: 100%;
+    }
+    .top1{
+        width:100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+<div class="header">
+
+    <h1>Growth</h1>
+    <img src="./Line 77.png" alt="">
+    <div class="nav">
+        <ul>
+            <li>Features</li>
+            <li>About us</li>
+            <li>Blog</li>
+            <li> <button>Log in</button></li>
+        </ul>
+    </div>
+</div>
+<div class="head">
+    <h2>A powerful solution to grow  your startup. Fast!</h2>
+    <h3>Organise, collaborate, and track progress seamlessly with <br>our one-stop-shop startup growth tool.</h3>
+    <button>Get started</button>
+    <div class="h4">
+        <img src="./Frame.svg" alt="">
+        <h1>Book a demo </h1>
+    </div>
+    <div class="h5"><img src="./image 15.png" alt=""></div>
+    <div class="h6"><img src="./Rectangle 645 (1).png" alt="">
+        <h1>Growth</h1>
+    </div>
+    <div class="top">
+        <div class="top1">.
+            <h1>Team Capodopera</h1>
+            <h5>Grow the number of clients and reach the 1000/day sales.</h5>
+            <img src="./Line 76.png" alt="" style="margin-left: 36px; margin-top: 20px; position: absolute; ">
+            <img src="./image 15 (1).png" alt=""
+                style="margin-left: 36px; margin-top: 30px ;  border-radius: 40px; position: absolute;">
+            <img src="./image 17.png" alt=""
+                style="margin-top: 30px; border-radius: 40px; margin-left: 69px; position: absolute;">
+            <img src="./image 16.png" alt=""
+                style="margin-top: 30px; border-radius: 40px; margin-left: 103px; position: absolute;">
+        </div>
+        <div class="top2">
+            <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left:px;">
+            <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left: 100px;">
+            <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left: 200px;">
+            <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left: 270px;">
+            <div class="top3">
+                <img src="./image 16.png" alt="">
+                <h6>Research pricing</h6>
+            </div>
+            <div class="top4">
+                <img src="./image 17.png" alt="">
+                <img src="./image 16.png" alt="" style="margin-left: 53px;">
+                <h7>Client follow-up</h7>
+            </div>
+            <div class="top5">
+                <img src="./image 15 (1).png" alt="">
+                <img src="./image 16.png" alt="" style="margin-left: 55px;">
+                <img src="./image 17.png" alt="" style=" margin-left: 85px;">
+                <h4>Team call</h4>
+            </div>
+            <div class="top6">
+                <h1>Team call</h1>
+                <p>You’ve been invited to a virtual meeting by John</p>
+                <h9>Jan 17 at 9AM</h9>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

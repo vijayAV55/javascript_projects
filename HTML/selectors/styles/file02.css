@@ -1,0 +1,38 @@
+#mainbox{
+    width: 700px;
+    height: 600px;
+    border: 3px solid gold;
+    padding:30px;
+    background-color: aqua;
+    margin: auto;
+}
+.chaildbox{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 3px solid green;
+    
+    
+    
+}
+img{
+    width: 180px;
+    height: 180px;
+}
+h1{
+    color: aqua;
+    background-color: blue;
+    width: 200px;
+    margin: auto;
+}
+P{
+    color:red;
+    background: scroll url(img1.avif);
+    width: 400PX;
+    height: 300PX;
+    font-size: 20PX;
+    text-align: center;
+    font-style: unset;
+    font-weight: 600;
+    margin: auto;
+}

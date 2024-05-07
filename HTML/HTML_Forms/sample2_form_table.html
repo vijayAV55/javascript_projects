@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+
+#table1{
+    background: red;
+  }
+  #table2{
+    background: gray;
+  }
+
+  li{
+    background: lightcoral;
+    margin: 5px;
+    width: 150px;
+    padding: 5px;
+    font-size: 24px;
+  }
+  input[type="email"]{
+    background: lightgreen;
+    padding: 2px;
+    margin: 10px;
+  }
+
+  li:nth-child(odd){
+    color: blue;
+    background: white;
+  }
+
+  li:nth-child(even){
+    color: aqua;
+    background: red;
+  }
+  li:nth-child(last){
+    background: yellow;
+  }
+  li:nth-child(3){
+    background: lightseagreen;
+  }
+    </style>
+  <link rel="stylesheet" href="./mystyle.css">
+  </head>
+  <body>
+    <form>
+      <table id="table1">
+        <tr>
+          <td><label for="fname">First Name </label></td>
+          <td>: <input type="text" id="fname" name=""/> <br /></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age </label></td>
+          <td>: <input type="number" id="age" /> <br /></td>
+        </tr>
+        <tr>
+          <td><label for="dob">DOB </label></td>
+          <td>: <input type="date" id="dob" /> <br /></td>
+        </tr>
+        <tr>
+          <td><label for="tob">Time of Birth </label></td>
+          <td>: <input type="time" name="" id="tob" /> <br /></td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <table id="table2">
+        <tr>
+          <td><label for="fname">First Name </label></td>
+          <td>: <input type="text" id="fname" name=""/> <br /></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age </label></td>
+          <td>: <input type="number" id="age" /> <br /></td>
+        </tr>
+        <tr>
+          <td><label for="dob">DOB </label></td>
+          <td>: <input type="date" id="dob" /> <br /></td>
+        </tr>
+        <tr>
+          <td><label for="tob">Time of Birth </label></td>
+          <td>: <input type="time" name="" id="tob" /> <br /></td>
+        </tr>
+      </table>
+
+      <input type="text" name="" id=""> <br>
+      <input type="number" name="" id=""> <br>
+      <input type="email" name="" id=""> <br>
+
+      <ul>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+      </ul>
+
+      <!-- <ul>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+      </ul> -->
+    </form>
+  </body>
+</html>

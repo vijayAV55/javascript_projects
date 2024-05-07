@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .header {
+            width: 1440px;
+            height: 88px;
+            background-color: #FFFFFF;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            position: absolute;
+            margin-top: 28px;
+            margin-left: 96px;
+        }
+
+        .header img {
+            margin-top: 30px;
+            margin-left: 210.1px;
+        }
+
+        .nav li {
+            display: inline;
+            margin-top: 15px;
+            margin-left: 50px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #131316;
+        }
+
+        .nav ul {
+            padding-top: 35px;
+            padding-right: 100px;
+            margin-left: 12px;
+        }
+
+        .nav button {
+            width: 70px;
+            height: 35px;
+            border-radius: 10px;
+        }
+
+        .head {
+            width: 1440px;
+            height: 800px;
+            margin: auto;
+            background-color: #FFFFFF;
+            position: relative;
+        }
+
+        .head h2 {
+            font-family: Poppins;
+            font-size: 64px;
+            font-weight: 500;
+            line-height: 70px;
+            letter-spacing: -2px;
+            text-align: left;
+            width: 824px;
+            height: 140px;
+            padding-top: 72px;
+            padding-left: 96px;
+        }
+
+        .head h3 {
+            padding-left: 96px;
+            padding-top: 24px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #131316;
+        }
+
+        .head button {
+            border-radius: 16px;
+            margin-left: 96px;
+            margin-top: 40px;
+            width: 166px;
+            height: 56px;
+            background: #4891FF;
+            color: #FFFFFF;
+            position: absolute;
+        }
+
+        .h4 {
+            width: 138px;
+            height: 38px;
+            background-color: #F5F5F5;
+            margin-left: 280px;
+            margin-top: 40px;
+            padding-top: 18px;
+            padding-left: 20px;
+            border-radius: 10px;
+            position: absolute;
+            font-size: 16px;
+        }
+
+        .h4 img {
+            position: absolute;
+        }
+
+        .h4 h1 {
+            font-size: 16px;
+            padding-left: 30px;
+            padding-top: 3px;
+        }
+
+        .h5 img {
+
+            position: absolute;
+            left: 1155px;
+            top: 250px;
+        }
+
+        .h6 img {
+            margin-left: 730px;
+            position: absolute;
+        }
+
+        .h6 h1 {
+            margin-left: 790px;
+            color: white;
+            position: absolute;
+            margin-top: 25px;
+        }
+
+        .top {
+            width: 612px;
+            height: 272px;
+            border-radius: 16px;
+            border: 1px;
+            border: 1px solid #FFFFFF;
+            margin-top: 160px;
+            margin-left: 96px;
+            background-color: #FFFFFF;
+            display: grid;
+            grid-template-columns: 200px auto;
+        }
+
+        .top1 h1 {
+            margin-left: 36px;
+            margin-top: 20px;
+        }
+
+        .top1 h5 {
+            width: 159px;
+            height: 30px;
+            font-size: 10px;
+            margin-left: 36px;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .top2 {
+            position: relative;
+            height: 205px;
+            width: 2px;
+            margin-left: 100px;
+        }
+
+        .top3 {
+            width: 213px;
+            height: 48px;
+            background: #F5F5F5;
+            margin-top: 60px;
+            border-radius: 10px;
+            position: absolute;
+        }
+
+        .top3 img {
+            margin-top: 5px;
+            margin-left: 20px;
+            border-radius: 40px;
+            position: absolute;
+        }
+
+        h6 {
+            margin-left: 70px;
+            margin-top: 20px;
+            font-size: 10px;
+        }
+
+        .top4 {
+            width: 213px;
+            height: 48px;
+            background: #F5F5F5;
+            margin-top: 125px;
+            border-radius: 10px;
+            position: absolute;
+            margin-left: 70px;
+            position: absolute;
+        }
+
+        .top4 img {
+            margin-top: 5px;
+            margin-left: 20px;
+            border-radius: 40px;
+            position: absolute;
+        }
+
+        .top h7 {
+            margin-left: 100px;
+            font-size: 10px;
+            margin-top: 20px;
+            position: absolute;
+        }
+
+        .top5 {
+            width: 213px;
+            height: 48px;
+            background: #DAF4FE;
+            margin-top: 180px;
+            border-radius: 10px;
+            position: absolute;
+            margin-left: 70px;
+        }
+
+        .top5 img {
+            margin-top: 5px;
+            margin-left: 20px;
+            border-radius: 40px;
+            position: absolute;
+        }
+
+        .top5 h4 {
+            margin-left: 125px;
+            font-size: 10px;
+            margin-top: 20px;
+        }
+
+        .top6 {
+            width: 190px;
+            height: 190px;
+            border-radius: 16px;
+            background-color: #DAF4FE;
+            margin-left: 757px;
+            margin-top: 60px;
+        }
+
+        .top6 h1 {
+            padding-top: 30px;
+            font-size: 16px;
+            padding-left: 55px;
+        }
+
+        .top6 p {
+            margin-left: 30px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .top6 h9 {
+            margin-left: 50px;
+        }
+
+        .midilebox {
+            width: 1440px;
+            height: 963px;
+            background-color: #131316;
+            margin: auto;
+        }
+
+        .midilebox p {
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 58px;
+            letter-spacing: -1px;
+            text-align: center;
+            width: 767px;
+            height: 118px;
+            margin-left: 334px;
+            padding-top: 96px;
+            color: #FFFFFF;
+        }
+
+        .midilebox img {
+            margin-left: 334px;
+            padding-top: 20px;
+        }
+
+        .midile h1 {
+            color: #FFFFFF;
+            margin-top: 80px;
+            font-size: 16px;
+            padding-left: 35px;
+            padding-top: 20px;
+        }
+
+        .midile {
+            width: 166px;
+            height: 59px;
+            background: #4891FF;
+            margin-left: 637px;
+            border-radius: 20px;
+        }
+
+        hr {
+            margin-top: 96px;
+            background: #4891FF;
+        }
+
+        .mid {
+            width: 1440px;
+            height: 885px;
+            background: #131316;
+            margin: auto;
+        }
+
+        .mid p {
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 58px;
+            letter-spacing: -1px;
+            text-align: left;
+            width: 836px;
+            height: 176px;
+            margin-left: 85px;
+            padding-top: 90px;
+        }
+
+        .mid1 {
+            width: 405.57px;
+            height: 308.24px;
+            border-radius: 16px;
+            background-color: #FAFAFA;
+            margin-left: 85px;
+            margin-top: 65px;
+            position: absolute;
+        }
+
+        .mid1 p {
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #131316;
+
+        }
+
+        .mid2 {
+            width: 406px;
+            height: 452px;
+            background-color: #FAFAFA;
+            border-radius: 16px;
+            position: absolute;
+            margin-left: 530px;
+            margin-top: 65px;
+        }
+
+        .mid3 {
+            width: 405px;
+            height: 360px;
+            border-radius: 16px;
+            background-color: #FAFAFA;
+            position: absolute;
+            margin-left: 970px;
+            margin-top: 65px;
+        }
+
+        .mid4 {
+            width: 405px;
+            height: 299px;
+            border-radius: 16px;
+            position: absolute;
+            background-color: white;
+            margin-left: 1400px;
+            margin-top: 65px;
+        }
+
+        .mid2 p {
+            width: 320px;
+            height: 270px;
+            font-size: 16px;
+            color: #000;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        .mid3 p {
+            width: 320px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #131316;
+            height: 180px;
+        }
+
+        .mid4 p {
+            width: 320px;
+            height: 120px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #131316;
+        }
+
+        .box {
+            width: 1440px;
+            height: 1222px;
+            background: #F4F4F6;
+            margin: auto;
+        }
+
+        .box h1 {
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 58px;
+            letter-spacing: -3px;
+            text-align: center;
+            padding-top: 72px;
+        }
+
+        .box h2 {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        .box0 {
+            width: 830px;
+            height: 800px;
+
+            padding-top: 40px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 663px;
+            background-color: #FAFAFA;
+            border-radius: 16px;
+            margin-top: 75px;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 791px;
+            background: #131316;
+            border-radius: 16px;
+        }
+
+        .box1 h1 {
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 43px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            color: #131316;
+            margin-left: 30px;
+        }
+
+        .box1 p {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 288px;
+            height: 78px;
+            color: #494A4D;
+            margin-left: 30px;
+        }
+
+        .box1 h2 {
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 43px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            margin-left: 30px;
+            position: absolute;
+            margin-top: 35px;
+        }
+
+        .box1 h3 {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            margin-top: 52px;
+            margin-left: 100px;
+        }
+
+        .box1 img {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .box1 h4 {
+            width: 195px;
+            height: 45px;
+            background-color: #4891FF;
+            border-radius: 16px;
+            margin-left: 30px;
+            margin-top: 20px;
+            padding-left: 70px;
+            padding-top: 20px;
+            color: #FFFFFF;
+        }
+
+        .box2 h1 {
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 43px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            color: #FFFFFF;
+            margin-left: 40px;
+        }
+
+        .box2 p {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #E5E7EB;
+            width: 288px;
+            height: 78px;
+            margin-left: 40px;
+        }
+
+        .box2 img {
+            margin-left: 40px;
+            padding-top: 20px;
+        }
+
+        .box2 h2 {
+            width: 288px;
+            height: 40px;
+            padding: 16px, 32px, 16px, 32px;
+            border-radius: 16px;
+            gap: 10px;
+            background: #4891FF;
+            margin-left: 40px;
+            padding-top: 25px;
+            color: #DAF4FE;
+            margin-top: 30px;
+        }
+
+        .box h3 p {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 60px;
+            margin-left: 420px;
+            color: #000;
+        }
+
+        .lastbox {
+            width: 1440px;
+            height: 1099px;
+            background-color: #F4F4F6;
+            margin: auto;
+        }
+
+        .lastbox h1 {
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 58px;
+            letter-spacing: -3px;
+            text-align: center;
+            padding-top: 72px;
+            margin-left: 30px;
+        }
+
+        .lastbox h2 {
+            width: 60px;
+            height: 48px;
+            border-radius: 8px;
+            background: #4891FF;
+            margin-left: 580px;
+            margin-top: 35px;
+            padding-top: 10px;
+            padding-left: 20px;
+            position: absolute;
+        }
+
+        .lastbox h3 {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #000;
+            background: #F4F4F6;
+            width: 145px;
+            height: 48px;
+            border-radius: 4px;
+            margin-left: 665px;
+            margin-top: 35px;
+            padding-top: 10px;
+            padding-left: 30px;
+            position: absolute;
+        }
+
+        .lastbox h4 {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 75px;
+            height: 45px;
+            border-radius: 4px;
+            background: #F4F4F6;
+            margin-left: 845px;
+            margin-top: 35px;
+            padding-top: 11px;
+            padding-left: 25px;
+        }
+
+        .lastbox p {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.01em;
+            margin-top: 70px;
+            margin-left: 450px;
+            color: #000;
+        }
+
+        .footer {
+            width: 1440px;
+            height: 579px;
+            background-color: #000;
+            margin: auto;
+        }
+
+        .footer h1 {
+            color: #F4F4F6;
+            padding-top: 109px;
+            margin-left: 78px;
+            position: absolute;
+        }
+
+        .footer img {
+            margin-left: 180px;
+            padding-top: 105px;
+        }
+
+        .foot {
+            width: 405.57px;
+            height: 204.82px;
+            border-radius: 16px;
+            background-color: #F4F4F6;
+            margin-left: 78px;
+            margin-top: 60px;
+            position: absolute;
+        }
+
+        .foot h2 {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #35333C;
+            margin-left: 30px;
+            padding-top: 30px;
+        }
+
+        .foot p {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #131316;
+            margin-left: 30px;
+        }
+
+        .foot h3 {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 185px;
+            height: 35px;
+            border-radius: 8px;
+            border: 1px solid;
+            margin-left: 30px;
+            margin-top: 20px;
+            padding-left: 40px;
+            padding-top: 16px;
+            position: absolute;
+        }
+
+        .foot h4 {
+            width: 106px;
+            height: 40px;
+            border-radius: 8px;
+            background: #4891FF;
+            margin-left: 270px;
+            margin-top: 19px;
+            padding-top: 12px;
+            padding-left: 15px;
+        }
+
+        .foot1 {
+            position: absolute;
+            margin-left: 600px;
+            margin-top: 45px;
+        }
+
+        .foot1 li {
+            color: #E5E7EB;
+            list-style: none;
+            padding-top: 25px;
+        }
+        .foot2 {
+            position: absolute;
+            margin-left: 810px;
+            margin-top: 45px;
+        }
+        .foot2 li {
+            color: #E5E7EB;
+            list-style: none;
+            padding-top: 25px;
+            
+        }
+        .foot2 h3 {
+    margin-top: 25px;
+    position: absolute;
+    color: azure;
+    margin-left: 250px;
+}
+.foot2 ul {
+    position: absolute;
+    width: 100px;
+}
+.foot2 h4 {
+    margin-left: 250px;
+    color: azure;
+    margin-top: 60px;
+}
+@media screen and (max-width:320px){
+    .header{
+        width: 100%;
+        display: block;
+    }
+    .nav{
+        width: 100%;
+    }
+    .head{
+        width: 100%;
+    }
+    .h4{
+        width: 100%;
+    }
+    .top{
+        width: 100%;
+    }
+    .top1{
+        width:100%;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Growth</h1>
+        <img src="./Line 77.png" alt="">
+        <div class="nav">
+            <ul>
+                <li>Features</li>
+                <li>About us</li>
+                <li>Blog</li>
+                <li> <button>Log in</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        <h2>A powerful solution to grow <br> your startup. Fast!</h2>
+        <h3>Organise, collaborate, and track progress seamlessly with <br>our one-stop-shop startup growth tool.</h3>
+        <button>Get started</button>
+        <div class="h4">
+            <img src="./Frame.svg" alt="">
+            <h1>Book a demo </h1>
+        </div>
+        <div class="h5"><img src="./image 15.png" alt=""></div>
+        <div class="h6"><img src="./Rectangle 645 (1).png" alt="">
+            <h1>Growth</h1>
+        </div>
+        <div class="top">
+            <div class="top1">.
+                <h1>Team Capodopera</h1>
+                <h5>Grow the number of clients and reach the 1000/day sales.</h5>
+                <img src="./Line 76.png" alt="" style="margin-left: 36px; margin-top: 20px; position: absolute; ">
+                <img src="./image 15 (1).png" alt=""
+                    style="margin-left: 36px; margin-top: 30px ;  border-radius: 40px; position: absolute;">
+                <img src="./image 17.png" alt=""
+                    style="margin-top: 30px; border-radius: 40px; margin-left: 69px; position: absolute;">
+                <img src="./image 16.png" alt=""
+                    style="margin-top: 30px; border-radius: 40px; margin-left: 103px; position: absolute;">
+            </div>
+            <div class="top2">
+                <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left:px;">
+                <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left: 100px;">
+                <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left: 200px;">
+                <img src="./Line 60.png" alt="" style="margin-top: 40px;position: absolute; margin-left: 270px;">
+                <div class="top3">
+                    <img src="./image 16.png" alt="">
+                    <h6>Research pricing</h6>
+                </div>
+                <div class="top4">
+                    <img src="./image 17.png" alt="">
+                    <img src="./image 16.png" alt="" style="margin-left: 53px;">
+                    <h7>Client follow-up</h7>
+                </div>
+                <div class="top5">
+                    <img src="./image 15 (1).png" alt="">
+                    <img src="./image 16.png" alt="" style="margin-left: 55px;">
+                    <img src="./image 17.png" alt="" style=" margin-left: 85px;">
+                    <h4>Team call</h4>
+                </div>
+                <div class="top6">
+                    <h1>Team call</h1>
+                    <p>You’ve been invited to a virtual meeting by John</p>
+                    <h9>Jan 17 at 9AM</h9>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="midilebox">
+        <p>See how it works and get started
+            in less than 2 minutes</p>
+        <img src="./Rectangle 611.png" alt="">
+        <div class="midile">
+            <h1>Get started</h1>
+        </div>
+        <hr>
+    </div>
+    <div class="mid">
+        <p>Don't just take our word for it, see <br>the success stories from <br>businesses just like yours.</p>
+        <div class="mid1">
+            <p>“Our business has seen a <br> significant increase in <br> productivity since we started <br>using the
+                Growth app.”
+            </p>
+        </div>
+        <div class="mid2">
+            <p>“As a small business owner, it's important to have a tool that can help me keep track of everything. The
+                Growth app has been a lifesaver for me, allowing me to manage my contacts, schedule appointments, and
+                track progress all in one place..”</p>
+        </div>
+        <div class="mid3">
+            <p>“The dashboards and reporting feature has provided valuable insights into our performance and helped us
+                make data-driven decisions. It's a game changer for us.”</p>
+        </div>
+        <div class="mid4">
+        </div>
+    </div>
+    <div class="box">
+        <h1>Pricing</h1>
+        <h2>Start free and scale while you grow. No hidden fees. Unlimited users for free.</h2>
+        <div class="box0">
+            <div class="box1">
+                <h1>Simple</h1>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+                <h2>Free</h2>
+                <h3>* No credit card required </h3>
+                <img src="./Group 2482.png" alt="">
+                <img src="./Group 2483.png" alt="">
+                <img src="./Group 2484.png" alt="">
+                <img src="./Group 2485.png" alt="">
+                <h4>Get started</h4>
+            </div>
+
+            <div class="box2">
+                <h1>Premium</h1>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+                <img src="./Group 2488.png" alt="" style="margin-left: 40px;">
+                <p>Everything from the free plan <br> plus:</p>
+                <img src="./Group 2486.png" alt="">
+                <img src="./Group 2483 (1).png" alt="">
+                <img src="./Group 2488 (1).png" alt="">
+                <img src="./Group 2488 (1).png" alt="">
+                <h2>Get started</h2>
+            </div>
+
+        </div>
+        <h3>
+            <p>All prices are in USD and charged per month with applicable taxes added at checkout.</p>
+        </h3>
+        <img src="./Link (1).png" alt="" style="margin-left: 620px; margin-top: 20px;">
+    </div>
+    <div class="lastbox">
+        <h1>Frequently asked questions</h1>
+        <h2>All</h2>
+        <h3>Getting started</h3>
+        <h4>Pricing</h4>
+        <p>How does the contact management feature help me keep track of clients <br> and partners?</p>
+        <p>Keep track of your contacts, gain valuable insights, analyse live data and <br> performance metrics.</p>
+        <p>Can I customize the dashboards and reporting feature to display the <br> metrics that are most important to
+            my business?</p>
+        <p>How does the task management feature help me delegate tasks to my <br> team and track progress?</p>
+        <p>Can I collaborate with my team in real-time using all tools?</p>
+        <p>Is the app available on all devices?</p>
+        <p>How does the app help me stay compliant when working with freelancers <br> and contractors?</p>
+    </div>
+    <div class="footer">
+        <h1>Growth</h1>
+        <img src="./Line 77.png" alt="">
+        <div class="foot">
+            <h2>Subscribe to newsletter</h2>
+            <p>Subscribe now to receive tips on how to take your business to the next level.</p>
+            <h3>Enter your email</h3>
+            <h4>Subscribe</h4>
+        </div>
+        <div class="foot1">
+            <ul>
+                <li>Company</li>
+                <li>About</li>
+                <li>Our Process</li>
+                <li>Join our team</li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <ul>
+                <li>Resources</li>
+                <li>News</li>
+                <li>Research</li>
+                <li>Recent Projects</li>
+            </ul>
+            <h3>Contact</h3>
+<h4>hello@growthapp.com</h4>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

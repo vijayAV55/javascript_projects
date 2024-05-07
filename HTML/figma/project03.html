@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .nav {
+            width: 1440px;
+            height: 1099px;
+            background-color: #0D0D0D;
+            margin: auto;
+        }
+
+        .nav1 {
+            height: 840px;
+            width: 642px;
+
+        }
+
+        .nav2 {
+            height: 840px;
+        }
+
+        .nav1 img {
+            margin-top: 102px;
+            margin-left: 246px;
+        }
+
+        .nav0 {
+            width: 582.59px;
+            height: 591px;
+            margin-top: 65px;
+            border: 1px solid #FFFFFF;
+        }
+
+        .nav0 h1 {
+            font-family: Open Sans;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: 0em;
+            margin-left: 36px;
+            margin-top: 50px;
+            color: #FFFFFF;
+        }
+
+        .nav0 p {
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            margin-left: 45px;
+            margin-top: 23px;
+            color: #FFFFFF;
+        }
+
+        .nav0 h2 {
+            margin-top: 195px;
+            margin-left: 45px;
+            font-family: Open Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+        }
+
+        .nav0 img {
+            margin-top: 10px;
+            margin-left: 45px;
+        }
+
+        .nav3 {
+            height: 260px;
+            width: 1440px;
+        }
+
+        .content {
+            margin: 101px 246px 0 246px;
+            display: flex;
+        }
+
+        .details {
+            height: 260px;
+            display: flex;
+            color: #FFFFFF;
+        }
+
+        .data1 h1 {
+            margin-left: 304px;
+            margin-top: 55px;
+            font-size: 60px;
+        }
+
+        .data1 h2 {
+            margin-left: 320px;
+            font-size: 24px;
+        }
+
+        .data2 h1 {
+            margin-left: 118px;
+            font-size: 60px;
+            margin-top: 55px;
+        }
+
+        .data2 h2 {
+            margin-left: 125px;
+        }
+
+        .data3 h1 {
+            margin-left: 185px;
+            margin-top: 55px;
+            font-size: 60px;
+        }
+
+        .data3 h2 {
+            margin-left: 185px;
+        }
+
+        .middlebox {
+            width: 1440px;
+            height: 1269px;
+            background-color: #131313;
+        }
+
+        .middle1 {
+            background-color: antiquewhite;
+            width: 969px;
+            height: 998px;
+            margin-left: 276px;
+            padding-top: 120px;
+            position: relative;
+        }
+
+        #pen {
+            width: 1440px;
+            height: 1268px;
+            background: #131313;
+            margin: auto;
+        }
+
+        #pen1 {
+            margin: auto;
+            width: 969px;
+            height: 1118px;
+            flex-shrink: 0;
+
+        }
+
+        .cap {
+            height: 257px;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            margin-top: 120px;
+        }
+
+        .cap1 {
+            width: 645px;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            height: 257px;
+        }
+
+        .cap1 img {
+            margin-top: 77px;
+        }
+
+        .cap1 p {
+            height: 96px;
+            margin-top: 148px;
+            margin-left: 13px;
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 149%;
+            letter-spacing: 0.8px;
+            width: 463px;
+        }
+
+        .cap2 h1 {
+            width: 297px;
+            height: 120px;
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100.5%;
+        }
+
+        .cap2 h2 {
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100.5%;
+            margin-top: 58px;
+            margin-left: 176px;
+        }
+
+        .bap {
+            height: 204px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .bap h2 {
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100.5%;
+            margin-top: 127px;
+            margin-left: 15px;
+        }
+
+        .bap p {
+            height: 96px;
+            margin-top: 95px;
+            margin-left: 190px;
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 149%;
+            letter-spacing: 0.8px;
+            width: 463px;
+        }
+
+        .bap img {
+            margin-top: 24px;
+            margin-right: 70px;
+        }
+
+        .dap {
+            height: 204px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .dap img {
+            margin-top: 27px;
+        }
+
+        .dap p {
+            height: 96px;
+            margin-top: 95px;
+            margin-right: 160px;
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 149%;
+            letter-spacing: 0.8px;
+            width: 463px;
+        }
+
+        .dap h2 {
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100.5%;
+            margin-top: 120px;
+            margin-right: 65px;
+        }
+
+        .eap {
+            height: 204px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .eap h2 {
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100.5%;
+            margin-top: 127px;
+            margin-left: 15px;
+        }
+
+        .eap p {
+            height: 96px;
+            margin-top: 95px;
+            margin-left: 190px;
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 149%;
+            letter-spacing: 0.8px;
+            width: 463px;
+        }
+
+        .eap img {
+            margin-top: 24px;
+            margin-right: 70px;
+        }
+
+        #fap {
+            width: 299px;
+            height: 79px;
+            flex-shrink: 0;
+            border: 2px solid #FCA311;
+            margin-top: 240px;
+            margin: auto;
+            margin-left: 240px;
+            background: #131313;
+        }
+
+        #fap p {
+            color: #FBFBFD;
+        }
+
+        @media screen and (max-width:320px) {
+            .nav {
+                width: 100%;
+                display: block;
+            }
+
+            .content {
+                width: 100%;
+                margin: 0%;
+                display: block;
+            }
+
+            .left img {
+                width: 100%;
+            }
+
+            .nav0 {
+                margin: 0%;
+                width: 100%;
+            }
+
+            .nav0 h1 {
+                margin-left: 19px;
+                font-size: 40px;
+            }
+
+            .nav0 p {
+                margin-left: 19px;
+                font-size: 12px;
+            }
+
+            .nav0 h2 {
+                margin-left: 16px;
+                margin-top: 0%;
+            }
+
+            .nav0 img {
+                margin-left: 16px;
+            }
+            #pen{
+                width: 100%;
+            }
+            #pen1{
+                  width: 100%;
+            }
+            .cap{
+                width: 100%;
+                display: block;
+            }
+            .cap1{
+           width: 100%;
+           display: block;
+            }
+            .cap2{
+                width: 100%;
+            }
+            .bap{
+                width: 100%;
+            }
+            .dap{
+                width: 100%;
+            }
+            .eap{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="content">
+            <div class="left">
+                <img src="./Rectangle 8090.png" alt="">
+            </div>
+            <div class="right">
+                <div class="nav0">
+                    <h1>YOUR TRAVEL
+                        COMPANION</h1>
+                    <p>We take pride in the high level of chauffeur service <br> provided by all of our chauffeurs and
+                        the
+                        care
+                        and <br> respect that they take in servicing the needs of <br> our customers.</p>
+                    <h2>Learn more</h2>
+                    <img src="./Arrow 5.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="data1">
+                <h1>10 Cars</h1>
+                <h2>Learn more</h2>
+            </div>
+            <div class="data2">
+                <h1>1500</h1>
+                <h2>Learn more</h2>
+            </div>
+            <div class="data3">
+                <h1>5</h1>
+                <h2>Learn more</h2>
+            </div>
+        </div>
+        <div id="pen">
+            <div id="pen1">
+                <div class="cap">
+                    <div class="cap1">
+                        <img src="./Rectangle 8091.png" alt="">
+                        <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and
+                            the care and respect that they take in servicing the needs of our customers.</p>
+                    </div>
+                    <div class="cap2">
+                        <h1>All The
+                            Categories</h1>
+                        <h2>1</h2>
+                    </div>
+                </div>
+                <img src="./Line 32.png" alt="">
+                <div class="bap">
+                    <h2>2</h2>
+                    <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the
+                        care and respect that they take in servicing the needs of our customers.</p>
+                    <img src="./Rectangle 8092.png" alt="">
+                </div>
+                <img src="./Line 32.png" alt="">
+                <div class="dap">
+                    <img src="./Rectangle 8093.png" alt="">
+                    <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the
+                        care and respect that they take in servicing the needs of our customers.</p>
+                    <h2>3</h2>
+                </div>
+                <img src="./Line 32.png" alt="">
+                <div class="eap">
+                    <h2>4</h2>
+                    <p>We take pride in the high level of chauffeur service provided by all of our chauffeurs and the
+                        care and respect that they take in servicing the needs of our customers.</p>
+                    <img src="./Rectangle 8094.png" alt="">
+                </div>
+                <img src="./Line 32.png" alt="">
+
+            </div>
+            <button id="fap">
+                <p> View more</p>
+            </button>
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>
