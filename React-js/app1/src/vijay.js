@@ -1,4 +1,4 @@
-function vijay(){
+function Done(){
     return <h2>vijay ram welcome!!!</h2>
 }
-export default vijay
+export default Done
