@@ -1,5 +1,8 @@
-export const student = () =>{
-  return <h2>well come ram</h2>
 
-  }
-export default student
+
+function Name (){
+  return <div>
+    <h1>hi morning</h1>
+  </div>
+}
+export default Name 
