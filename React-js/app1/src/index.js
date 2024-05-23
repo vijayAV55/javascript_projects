@@ -8,11 +8,13 @@ import File from './Sample2';
 import Sample from './Sample3';
 import './Sample3.css'
 import Const from './Sample4';
+import Git from './Sample5';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <Const/>
+    <App />
 
   </React.StrictMode>
 );
