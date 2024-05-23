@@ -2,7 +2,6 @@
 import { CalendarAppointments } from "./Assignments/CalendarAppointments"
 import { ChatApplication } from "./Assignments/ChatApplication"
 import { EcommerceCart } from "./Assignments/EcommerceCart"
-
 import { GameCharacter } from "./Assignments/GameCharacter"
 import { InventoryManagementSystem } from "./Assignments/InventoryManagementSystem"
 import { MovieDatabase } from "./Assignments/MovieDatabase"
@@ -20,7 +19,7 @@ function App() {
     <InventoryManagementSystem/>
     <CalendarAppointments/>
     <GameCharacter/>
-    <EcommerceCart/>
+  
    
   </div>
 }
