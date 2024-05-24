@@ -1,7 +1,7 @@
 
-import Vijay from "./Vijay"
-import Ram from "./Viji"
-import Name from "./Sample1"
+import Vijay from "../Vijay"
+import Ram from "../Viji"
+import Name from "../Sample1"
 function  Dinesh(){
     return <div>
         <h1>hello ram</h1>
