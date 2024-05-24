@@ -13,6 +13,8 @@ import { LanguageLearningApp } from "./Assignments/LanguageLearningApp"
 import { MovieDatabase } from "./Assignments/MovieDatabase"
 import { MusicBandManager } from "./Assignments/MusicBandManager"
 import { MusicPlayer } from "./Assignments/MusicPlayer"
+import { ProjectManagementTool } from "./Assignments/ProjectManagementTool"
+import { RealEstateListings } from "./Assignments/RealEstateListings"
 import { RecipeBook } from "./Assignments/RecipeBook"
 import { RecipeGenerator } from "./Assignments/RecipeGenerator"
 import { StudentEnrollmentSystem } from "./Assignments/StudentEnrollmentSystem"
@@ -40,6 +42,8 @@ function App() {
     <MusicBandManager/>
     <BlogPostManage/>
     <FitnessChallengeTracke/>
+    <RealEstateListings/>
+    <ProjectManagementTool/>
   
   
    

@@ -4,9 +4,9 @@ import { useState } from "react"
 export function BlogPostManage(){
     const [BlogPostManage] = useState ({
         posttitle: "pushpa",
-        author:"thaggedelehy",
-        content:"yu",
-        tags:"love you",
+        author:"vijay",
+        content:"cenima",
+        tags:"",
 
         createnewposts: function () { }, 
         editposts: function () { }, 
