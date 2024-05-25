@@ -8,7 +8,7 @@ export class BlogPostManager extends Component {
       content: "cenima",
     },
     student: ["guna", "vijay", "ram", "kumar"],
-    Newposts: [],
+    Newposts: ["1"],
   };
   CreateNewposts = () => {
     const newstate = { ...this.state };
@@ -40,6 +40,11 @@ export class BlogPostManager extends Component {
           {this.state.student.map((val) => (
             <li>{val}</li>
           ))}
+        </ul>
+        <ul>
+          <p>{this.state.person.author}</p>
+          <p>{this.state.posttitle}</p>
+          <p>{this.state.Newposts}</p>
         </ul>
       </div>
     );
