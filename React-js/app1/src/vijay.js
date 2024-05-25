@@ -1,4 +1,5 @@
 
+import { BlogPostManage } from "./Assignment-2/BlogPostManage"
 import { GameCharacter } from "./Assignment-2/GameCharacter"
 import { HotelReservationSystem } from "./Assignment-2/HotelReservationSystem"
 import { InventoryManagementSystem } from "./Assignment-2/InventoryManagementSystem"
@@ -11,6 +12,7 @@ import { RealEstateListings } from "./Assignment-2/RealEstateListings"
 import { RecipeBook } from "./Assignment-2/RecipeBook"
 import { RecipeGenerator } from "./Assignment-2/RecipeGenerator"
 import { StudentEnrollmentSystem } from "./Assignment-2/StudentEnrollmentSystem"
+import { SubscriptionService } from "./Assignment-2/SubscriptionService"
 import { TaskTracker } from "./Assignment-2/TaskTracker"
 import { WeatherApp } from "./Assignment-2/WeatherApp"
 
@@ -30,6 +32,8 @@ function Vijay(){
    <RecipeGenerator/>
    <TaskTracker/>
    <WeatherApp/>
+   <BlogPostManage/>
+   <SubscriptionService/>
     </div>
 }
 export default Vijay
