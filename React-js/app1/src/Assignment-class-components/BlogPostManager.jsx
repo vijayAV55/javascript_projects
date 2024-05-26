@@ -7,8 +7,8 @@ export class BlogPostManager extends Component {
       author: "vijay",
       content: "cenima",
     },
-    student: ["guna", "vijay", "ram", "kumar"],
-    Newposts: ["1"],
+    student: ["renu", "hasini", "kumari", "swamy"],
+    date: ["4,4,4"],
   };
   CreateNewposts = () => {
     const newstate = { ...this.state };
@@ -30,11 +30,12 @@ export class BlogPostManager extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.CreateNewposts}>CreateNewposts</button> <br />{" "}
+        <button onClick={this.CreateNewposts}>CreateNewposts</button> <br />
         <br />
         <button onClick={this.Editposts}>Editposts</button>
         <br /> <br />
-        <button onClick={this.Deleteposts}>Deleteposts</button> <br />
+        <button onClick={this.Deleteposts}> Deleteposts</button>
+        <br />
         <br />
         <ul>
           {this.state.student.map((val) => (
@@ -43,8 +44,8 @@ export class BlogPostManager extends Component {
         </ul>
         <ul>
           <p>{this.state.person.author}</p>
-          <p>{this.state.posttitle}</p>
-          <p>{this.state.Newposts}</p>
+          <p>{this.state.person.content}</p>
+          <p>{this.state.person.date}</p>
         </ul>
       </div>
     );

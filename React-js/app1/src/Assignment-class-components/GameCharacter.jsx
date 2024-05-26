@@ -1,22 +1,54 @@
-import { useState } from "react"
+import { Component } from "react";
 
-export function GameCharacter(){
-    const [GameCharacter] = useState ({
-        name:"Ram",
-        level: "200",
-        healthpoints :"10%",
+export class GameCharacter extends Component {
+  state = {
+    posttitle: "li",
+    person: {
+      name: "Ram",
+      level: "200",
+      healthpoints: "10%",
+    },
+    student: ["renu", "hasini", "kumari", "swamy"],
+    date: ["4,4,4"],
+  };
+  attack = () => {
+    const newstate = { ...this.state };
+    newstate.student.push("400", "100%");
+    this.setState(newstate);
+  };
 
-        attack: function () { },
-        defend: function () { },
-        levelup: function () { },
-       
-    })
+  levelup = () => {
+    const newstate = { ...this.state };
+    newstate.student.splice(1, 0, "1000");
+    this.setState(newstate);
+  };
+  defend = () => {
+    const newstate = { ...this.state };
+    newstate.student.pop();
+    this.setState(newstate);
+  };
 
-    return <div>
+  render() {
+    return (
+      <div>
+        <button onClick={this.attack}>attack</button> <br />
+        <br />
+        <button onClick={this.levelup}>levelup</button>
+        <br /> <br />
+        <button onClick={this.defend}> defend</button>
+        <br />
+        <br />
         <ul>
-            {Object.keys(GameCharacter).map((key) => {
-                return <li>{GameCharacter[key]}</li>
-            })}
+          {this.state.student.map((val) => (
+            <li>{val}</li>
+          ))}
         </ul>
-    </div>
-    }
+        <ul>
+          <p>{this.state.person.name}</p>
+          <p>{this.state.person.level}</p>
+          <p>{this.state.person.healthpoints}</p>
+        </ul>
+      </div>
+    );
+  }
+}

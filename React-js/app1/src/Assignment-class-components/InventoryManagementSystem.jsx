@@ -1,22 +1,54 @@
-import { useState } from "react"
+import { Component } from "react";
 
-export function InventoryManagementSystem(){
-    const [InventoryManagementSystem] = useState ({
-        productname:"Bike",
-        quantityavailable: "first",
-        price:100000,
+export class InventoryManagementSystem extends Component {
+  state = {
+    posttitle: "YT",
+    person: {
+      productname: "Bike",
+      quantityavailable: "first",
+      price: 100000,
+    },
+    student: ["renu", "hasini", "kumari", "swamy"],
+    date: ["4,4,4"],
+  };
+  newproducts = () => {
+    const newstate = { ...this.state };
+    newstate.student.push("car", "TM");
+    this.setState(newstate);
+  };
 
-        newproducts: function () { },
-        updatequantities: function () { },
-        removeproducts: function () { },
-       
-    })
+  updatequantities = () => {
+    const newstate = { ...this.state };
+    newstate.student.splice(1, 0, "Bus");
+    this.setState(newstate);
+  };
+  removeproducts = () => {
+    const newstate = { ...this.state };
+    newstate.student.pop();
+    this.setState(newstate);
+  };
 
-    return <div>
+  render() {
+    return (
+      <div>
+        <button onClick={this.newproducts}>newproducts</button> <br />
+        <br />
+        <button onClick={this.updatequantities}>updatequantities</button>
+        <br /> <br />
+        <button onClick={this.removeproducts}> removeproducts</button>
+        <br />
+        <br />
         <ul>
-            {Object.keys(InventoryManagementSystem).map((key) => {
-                return <li>{InventoryManagementSystem[key]}</li>
-            })}
+          {this.state.student.map((val) => (
+            <li>{val}</li>
+          ))}
         </ul>
-    </div>
-    }
+        <ul>
+          <p>{this.state.person.productname}</p>
+          <p>{this.state.person.quantityavailable}</p>
+          <p>{this.state.person.price}</p>
+        </ul>
+      </div>
+    );
+  }
+}

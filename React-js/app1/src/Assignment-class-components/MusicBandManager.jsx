@@ -1,24 +1,54 @@
-import { useState } from "react"
+import { Component } from "react";
 
+export class MusicBandManager extends Component {
+  state = {
+    posttitle: "pk",
+    person: {
+      bandmembers: "82",
+      upcominggigs: "ios",
+      setlist: "",
+    },
+    student: ["renu", "hasini", "kumari", "swamy"],
+    date: ["4,4,4"],
+  };
+  addmembers = () => {
+    const newstate = { ...this.state };
+    newstate.student.push("l56", "45");
+    this.setState(newstate);
+  };
 
-export function MusicBandManager(){
-    const [MusicBandManager] = useState ({
-        bandmembers: "82",
-        upcominggigs:"ios",
-        setlist:"",
+  schedulegigs = () => {
+    const newstate = { ...this.state };
+    newstate.student.splice(1, 0, "l,k,j,h,g,f");
+    this.setState(newstate);
+  };
+  schedulegigs = () => {
+    const newstate = { ...this.state };
+    newstate.student.pop();
+    this.setState(newstate);
+  };
 
-        addmembers: function () { }, 
-        schedulegigs: function () { }, 
-        updatethesetlist: function () { }, 
-
-             
-    })
-
-    return <div>
+  render() {
+    return (
+      <div>
+        <button onClick={this.addmembers}>addmembers</button> <br />
+        <br />
+        <button onClick={this.schedulegigs}>schedulegigs</button>
+        <br /> <br />
+        <button onClick={this.schedulegigs}> schedulegigs</button>
+        <br />
+        <br />
         <ul>
-            {Object.keys(MusicBandManager).map((key) => {
-                return <li>{MusicBandManager[key]}</li>
-            })}
+          {this.state.student.map((val) => (
+            <li>{val}</li>
+          ))}
         </ul>
-    </div>
-    }
+        <ul>
+          <p>{this.state.person.bandmembers}</p>
+          <p>{this.state.person.upcominggigs}</p>
+          <p>{this.state.person.setlist}</p>
+        </ul>
+      </div>
+    );
+  }
+}

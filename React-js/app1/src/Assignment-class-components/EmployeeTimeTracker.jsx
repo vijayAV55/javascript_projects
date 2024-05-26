@@ -1,24 +1,57 @@
-import { useState } from "react"
+import { Component } from "react";
 
+export class EmployeeTimeTracker extends Component {
+  state = {
+    posttitle: "hm",
+    person: {
+      employeename: "dinesh",
+      date: "27/6/2006",
+      starttime: "10:00 am",
+      endtime: "6:00 pm",
+    },
+    student: ["renu", "hasini", "kumari", "swamy"],
+    date: ["4,4,4"],
+  };
+  clockin = () => {
+    const newstate = { ...this.state };
+    newstate.student.push("10:30");
+    this.setState(newstate);
+  };
 
-export function EmployeeTimeTracker(){
-    const [EmployeeTimeTracker] = useState ({
-        employeename: "dinesh",
-        date:"27/6/2006",
-        starttime:"10:00 am",
-        endtime:"6:00 pm",
+  calculatetotalhoursworked = () => {
+    const newstate = { ...this.state };
+    newstate.student.splice("11:00");
+    this.setState(newstate);
+  };
+  clockout = () => {
+    const newstate = { ...this.state };
+    newstate.student.pop();
+    this.setState(newstate);
+  };
 
-
-        clockin: function () { },
-        clockout: function () { },
-        calculatetotalhoursworked: function () { },       
-    })
-
-    return <div>
+  render() {
+    return (
+      <div>
+        <button onClick={this.clockin}>clockin</button> <br />
+        <br />
+        <button onClick={this.calculatetotalhoursworked}>
+          calculatetotalhoursworked
+        </button>
+        <br /> <br />
+        <button onClick={this.clockout}> clockout</button>
+        <br />
+        <br />
         <ul>
-            {Object.keys(EmployeeTimeTracker).map((key) => {
-                return <li>{EmployeeTimeTracker[key]}</li>
-            })}
+          {this.state.student.map((val) => (
+            <li>{val}</li>
+          ))}
         </ul>
-    </div>
-    }
+        <ul>
+          <p>{this.state.person.employeename}</p>
+          <p>{this.state.person.starttime}</p>
+          <p>{this.state.person.endtime}</p>
+        </ul>
+      </div>
+    );
+  }
+}
