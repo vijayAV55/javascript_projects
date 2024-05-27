@@ -13,6 +13,13 @@ import { MovieDatabase } from "./Assignment-class-components/MovieDatabase";
 import { MusicBandManager } from "./Assignment-class-components/MusicBandManager";
 import { MusicPlayer } from "./Assignment-class-components/MusicPlayer";
 import { ProjectManagementTool } from "./Assignment-class-components/ProjectManagementTool";
+import { RealEstateListings } from "./Assignment-class-components/RealEstateListings";
+import { RecipeBook } from "./Assignment-class-components/RecipeBook";
+import { RecipeGenerator } from "./Assignment-class-components/RecipeGenerator";
+import { StudentEnrollmentSystem } from "./Assignment-class-components/StudentEnrollmentSystem - Copy";
+import { SubscriptionService } from "./Assignment-class-components/SubscriptionService";
+import { TaskTracker } from "./Assignment-class-components/TaskTracker";
+import { WeatherApp } from "./Assignment-class-components/WeatherApp";
 
 function App1() {
   return (
@@ -33,6 +40,13 @@ function App1() {
       <MusicBandManager />
       <MusicPlayer />
       <ProjectManagementTool />
+      <RealEstateListings />
+      <RecipeBook />
+      <RecipeGenerator />
+      <StudentEnrollmentSystem />
+      <SubscriptionService />
+      <TaskTracker />
+      <WeatherApp />
     </div>
   );
 }

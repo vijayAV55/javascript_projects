@@ -1,40 +1,39 @@
 import { Component } from "react";
 
-export class MusicPlayer extends Component {
+export class RecipeGenerator extends Component {
   state = {
-    posttitle: "pk",
+    posttitle: "li",
     person: {
-      currentsong: "tamil",
-      playlist: 543,
+      ingredients: "9640744182",
+      instructions: "Vijay",
     },
     student: ["renu", "hasini", "kumari", "swamy"],
     date: ["4,4,4"],
   };
-  play = () => {
+  newrecipes = () => {
     const newstate = { ...this.state };
-    newstate.student.push("l,m,n,o,p");
+    newstate.student.push("out", "inout");
     this.setState(newstate);
   };
 
-  skip = () => {
+  listingsbycriteria = () => {
     const newstate = { ...this.state };
-    newstate.student.splice(1, 0, "telugu songs");
+    newstate.student.splice(1, 0, "backup");
     this.setState(newstate);
   };
-  pause = () => {
+  removelistings = () => {
     const newstate = { ...this.state };
     newstate.student.pop();
     this.setState(newstate);
   };
-
   render() {
     return (
       <div>
-        <button onClick={this.play}>play</button> <br />
+        <button onClick={this.newrecipes}>newrecipes</button> <br />
         <br />
-        <button onClick={this.skip}>skip</button>
+        <button onClick={this.listingsbycriteria}>listingsbycriteria</button>
         <br /> <br />
-        <button onClick={this.pause}> pause</button>
+        <button onClick={this.removelistings}> removelistings</button>
         <br />
         <br />
         <ul>
@@ -43,8 +42,8 @@ export class MusicPlayer extends Component {
           ))}
         </ul>
         <ul>
-          <p>{this.state.person.currentsong}</p>
-          <p>{this.state.person.playlist}</p>
+          <p>{this.state.person.ingredients}</p>
+          <p>{this.state.person.instructions}</p>
         </ul>
       </div>
     );
