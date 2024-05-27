@@ -1,25 +1,54 @@
-import { useState } from "react"
+// const [BlogPostManage] = useState ({
 
+//     tags:"",
+//     createnewposts: function () { },
+//     editposts: function () { },
+//     deleteposts: function () { },
+import { useState } from "react";
 
-export function BlogPostManage(){
-    const [BlogPostManage] = useState ({
-        posttitle: "pushpa",
-        author:"vijay",
-        content:"cenima",
-        tags:"",
+export const BlogPostManage = () => {
+  const [myname, setmyname] = useState("vijayram");
+  const [userdetails, setuserdetails] = useState({
+    posttitle: "pushpa",
+    author: "vijay",
+    content: "cenima",
+  });
 
-        createnewposts: function () { }, 
-        editposts: function () { }, 
-        deleteposts: function () { }, 
+  const [UsersInfo, setUsersInfo] = useState[("ram", "vijay", "guna", "hima")];
 
-             
-    })
+  const chengemyname = () => {
+    setmyname("raguram");
+  };
 
-    return <div>
-        <ul>
-            {Object.keys(BlogPostManage).map((key) => {
-                return <li>{BlogPostManage[key]}</li>
-            })}
-        </ul>
+  const chengeuesredetails = () => {
+    setuserdetails({
+      posttitle: "gunda",
+      author: "hema",
+      content: "song",
+    });
+  };
+
+  return (
+    <div>
+      <h1>hii ram!!</h1>
+      <button onClick={chengemyname}>chenge my name </button>
+      <h2>my name is {myname}</h2>
+      <br />
+      <hr />
+      <br />
+      <button onClick={chengeuesredetails}>chenge user detailes</button>
+      <ul>
+        {Object.values(userdetails).map((val) => (
+          <li>{val}</li>
+        ))}
+      </ul>
+      <br />
+      <hr />
+      <ul>
+        {UsersInfo.map((val) => (
+          <li>{val}</li>
+        ))}
+      </ul>
     </div>
-    }
+  );
+};
