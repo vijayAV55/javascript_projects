@@ -1,10 +1,10 @@
-import { BlogPostManage } from "./Assignments-1/BlogPostManager";
+import { BlogPostManager } from "./Assignment-functions/BlogPostManager";
 
 function Vijay() {
   return (
     <div>
       <h1>function comonents</h1>
-      <BlogPostManage />
+      <BlogPostManager />
     </div>
   );
 }
