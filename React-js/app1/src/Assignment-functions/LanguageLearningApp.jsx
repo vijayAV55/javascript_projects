@@ -1,30 +1,30 @@
 import { useState } from "react";
 
-export const BlogPostManager = () => {
-  const [myname, setmyname] = useState("vijayram");
+export const LanguageLearningApp = () => {
+  const [myname, setmyname] = useState("Kushi");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    vocabularywords: "aeiou",
+    definitions: "60%",
+    examplesentences: "6000",
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("VIshnu");
   };
 
-  const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
+  const [usersInfo, setusersInfo] = useState(["PIn", "pream"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      vocabularywords: "man",
+      definitions: "90%",
+      examplesentences: "0000",
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["Murali", "Naidu"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2> LanguageLearningApp Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />

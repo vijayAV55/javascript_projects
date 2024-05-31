@@ -1,30 +1,38 @@
+// export class FitnessChallengeTracke extends Component {
+//   state = {
+//     posttitle: "lk",
+//     person: {
+
+//     },
 import { useState } from "react";
 
-export const BlogPostManager = () => {
-  const [myname, setmyname] = useState("vijayram");
+export const FitnessChallengeTracke = () => {
+  const [myname, setmyname] = useState("RR");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    challengename: "ram",
+    startdate: "how can",
+    enddate: "yu",
+    tags: "love you",
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("hm");
   };
 
-  const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
+  const [usersInfo, setusersInfo] = useState(["Rcb", "HRB"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      challengename: "tm",
+      startdate: "how can you",
+      enddate: "12:90",
+      tags: "hm hmhhm",
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["CSS", "KKR"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2>FitnessChallengeTracke Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />

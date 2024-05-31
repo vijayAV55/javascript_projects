@@ -1,30 +1,28 @@
 import { useState } from "react";
 
-export const BlogPostManager = () => {
-  const [myname, setmyname] = useState("vijayram");
+export const MusicPlayer = () => {
+  const [myname, setmyname] = useState("Mbbu");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    currentsong: "tamil",
+    playlist: 543,
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("Middu");
   };
 
-  const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
+  const [usersInfo, setusersInfo] = useState(["SUKUNYA", "MANALI"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      currentsong: "Kanada",
+      playlist: 110,
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["MALA", "MAYA"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2> MusicPlayer Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />

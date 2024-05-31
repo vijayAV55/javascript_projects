@@ -1,30 +1,38 @@
+// export class SubscriptionService extends Component {
+//   state = {
+//     posttitle: "li",
+//     person: {
+
+//     },
 import { useState } from "react";
 
-export const BlogPostManager = () => {
-  const [myname, setmyname] = useState("vijayram");
+export const SubscriptionService = () => {
+  const [myname, setmyname] = useState("RAMA");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    name: "vijay",
+    ingredients: "9640744182",
+    instructions: "Vijay",
+    age: "23",
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("ROOPA");
   };
 
-  const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
+  const [usersInfo, setusersInfo] = useState(["SEENU", "VENU"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      name: "vijay",
+      ingredients: "9640744182",
+      instructions: "Vijay",
+      age: "23",
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["MWWNA", "MEERA"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2> SubscriptionService Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />

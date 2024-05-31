@@ -1,30 +1,32 @@
 import { useState } from "react";
 
-export const BlogPostManager = () => {
+export const CalendarAppointments = () => {
   const [myname, setmyname] = useState("vijayram");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    eventname: "therrtham",
+    date: "23/4/2026",
+    time: "9:30 am",
+    location: "Bank",
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("seenu");
   };
 
   const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      eventname: "dvd",
+      date: "23/4/2023",
+      time: "9:00am",
+      location: "mnh",
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["ram", "kumar"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2>CalendarAppointments Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />
@@ -46,6 +48,7 @@ export const BlogPostManager = () => {
         ))}
       </ul>
       <hr />
+      <br />
     </div>
   );
 };

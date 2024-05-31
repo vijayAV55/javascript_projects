@@ -1,30 +1,30 @@
 import { useState } from "react";
 
-export const BlogPostManager = () => {
-  const [myname, setmyname] = useState("vijayram");
+export const GameCharacter = () => {
+  const [myname, setmyname] = useState("RR");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    name: "Ram",
+    level: "200",
+    healthpoints: "10%",
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("hm");
   };
 
-  const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
+  const [usersInfo, setusersInfo] = useState(["K", "L"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      name: "kumar",
+      level: "400",
+      healthpoints: "100%",
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["M", "N"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2> GameCharacter Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />

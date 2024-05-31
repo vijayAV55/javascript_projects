@@ -1,30 +1,38 @@
+// export class HotelReservationSystem extends Component {
+//   state = {
+//     posttitle: "pk",
+//     person: {
+
+//     },
 import { useState } from "react";
 
-export const BlogPostManager = () => {
-  const [myname, setmyname] = useState("vijayram");
+export const HotelReservationSystem = () => {
+  const [myname, setmyname] = useState("DARk");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    roomnumber: "9640744182",
+    guestname: "Vijay",
+    checkindate: "12/3/2009",
+    checkoutdate: "3/4/2009",
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("Hani");
   };
 
-  const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
+  const [usersInfo, setusersInfo] = useState(["Ganesh", "Giri"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      roomnumber: "9640744182",
+      guestname: "Guna",
+      checkindate: "12/3/000",
+      checkoutdate: "3/4/000",
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["Hari", "Dyantej"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2> HotelReservationSystem Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />

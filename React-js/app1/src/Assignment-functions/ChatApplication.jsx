@@ -1,30 +1,31 @@
+// ChatApplication
 import { useState } from "react";
 
-export const BlogPostManager = () => {
-  const [myname, setmyname] = useState("vijayram");
+export const ChatApplication = () => {
+  const [myname, setmyname] = useState("hemanth");
   const [userdetails, setuserdetails] = useState({
-    posttitle: "pushpa",
-    author: "vijay",
-    content: "cenima",
+    sender: "vijay",
+    receiver: "Jaipal",
+    message: "hi ram !!...hello ",
   });
   const chengemyname = () => {
-    setmyname("vasu");
+    setmyname("mom");
   };
 
   const [usersInfo, setusersInfo] = useState(["guru", "ram"]);
   const chengeuserdetails = () => {
     setuserdetails({
-      posttitle: "veera",
-      author: "sunil",
-      content: "padd",
+      sender: "kl",
+      receiver: "tam",
+      message: "hi ram !!...vijay...were ",
     });
   };
   const chengeuser = () => {
-    setusersInfo(["vinu", "sathish"]);
+    setusersInfo(["cm", "pm"]);
   };
   return (
     <div>
-      <h2>BlogPostManager Component </h2>
+      <h2>ChatApplication Component</h2>
       <button onClick={chengemyname}>chenge my name</button>
       <h2>my name is {myname}</h2>
       <br />
