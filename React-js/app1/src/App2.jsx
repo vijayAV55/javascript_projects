@@ -13,6 +13,12 @@ import { LanguageLearningApp } from "./Parent_child_component/LanguageLearningAp
 import { MovieDatabase } from "./Parent_child_component/MovieDatabase";
 import { MusicBandManager } from "./Parent_child_component/MusicBandManager";
 import { MusicPlayer } from "./Parent_child_component/MusicPlayer";
+import { ProjectManagementTool } from "./Parent_child_component/ProjectManagementTool";
+import { RealEstateListings } from "./Parent_child_component/RealEstateListings";
+import { RecipeBook } from "./Parent_child_component/RecipeBook";
+import { RecipeGenerator } from "./Parent_child_component/RecipeGenerator";
+import { StudentEnrollmentSystem } from "./Parent_child_component/StudentEnrollmentSystem - Copy";
+import { SubscriptionService } from "./Parent_child_component/SubscriptionService copy";
 
 function App2() {
   return (
@@ -31,6 +37,12 @@ function App2() {
       <MovieDatabase />
       <MusicBandManager />
       <MusicPlayer />
+      <ProjectManagementTool />
+      <RealEstateListings />
+      <RecipeBook />
+      <RecipeGenerator />
+      <StudentEnrollmentSystem />
+      <SubscriptionService />
     </div>
   );
 }
