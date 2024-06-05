@@ -1,15 +1,3 @@
-// export function FitnessChallengeTracke(){
-//     const [FitnessChallengeTracke] = useState ({
-//         challengename: "pushpa",
-//         startdate:"thaggedelehy",
-//         enddate:"yu",
-//         tags:"love you",
-
-//         createnewposts: function () { },
-//         editposts: function () { },
-//         deleteposts: function () { },
-
-//     })
 import { Component } from "react";
 
 export class FitnessChallengeTracke extends Component {
