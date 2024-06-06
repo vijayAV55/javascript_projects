@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./App";
-import "./Vijay";
+// import "./App";
+// import "./Vijay";
 // import reportWebVitals from "./App-js/reportWebVitals";
 // import Vijay from "./Vijay";
 // import App from "./App";
@@ -10,12 +10,13 @@ import "./Vijay";
 // import Vijay from "./Vijay";
 // import App from "./App";
 import "./style-1.css";
-import App2 from "./App2";
+// import App2 from "./App2";
+import App3 from "./App3";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App2 />
+    <App3 />
   </React.StrictMode>
 );
 // reportWebVitals();
