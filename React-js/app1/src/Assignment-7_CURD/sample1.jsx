@@ -1,10 +1,10 @@
 import { Component } from "react";
 
-export class sample1 extends Component() {
+export class Ram extends Component() {
   render() {
     return (
       <div>
-        <h1>Reactjs-Form</h1>
+        <h2>Ajay</h2>
       </div>
     );
   }

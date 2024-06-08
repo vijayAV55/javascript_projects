@@ -1,8 +1,2 @@
-function App() {
-  return (
-    <div>
-      <h1>vijayarm</h1>
-    </div>
-  );
-}
+function App() {}
 export default App;
