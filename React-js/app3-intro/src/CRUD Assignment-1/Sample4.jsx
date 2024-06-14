@@ -27,7 +27,26 @@ export class FormComponent extends Component {
       number: "",
     });
   };
-
+  deleteUser = (i) => {
+    const newState = { ...this.state };
+    newState.data.splice(i, 1);
+    this.setState(newState);
+  };
+  Edituser = (entry, i) => {
+    const newState = { ...this.state };
+    newState.userdetails = entry;
+    newState.showupdatebtn = true;
+    newState.index = i;
+    this.setState(newState);
+    // console.log(obj);
+  };
+  handleupdate = () => {
+    const newState = { ...this.state };
+    newState.data[this.state.index] = this.state.userdetails;
+    newState.showupdatebtn = false;
+    this.setState(newState);
+    this.clearForm();
+  };
   render() {
     const { name, id, email, number, data } = this.state;
 
@@ -75,7 +94,15 @@ export class FormComponent extends Component {
               required
             />
           </div>
-          <button type="submit">Submit</button>
+          {this.state.showupdatebtn ? (
+            <button type="button" onClick={this.handleupdate}>
+              update user
+            </button>
+          ) : (
+            <button type="submit" onClick={this.submit}>
+              Submit
+            </button>
+          )}
         </form>
 
         <h2>Submitted Data</h2>
@@ -86,15 +113,37 @@ export class FormComponent extends Component {
               <th>ID</th>
               <th>Email</th>
               <th>Number</th>
+              <th>deleteUser</th>
+              <th>Edit user</th>
             </tr>
           </thead>
           <tbody>
-            {data.map((entry, index) => (
-              <tr key={index}>
+            {data.map((entry, i) => (
+              <tr key={i}>
                 <td>{entry.name}</td>
                 <td>{entry.id}</td>
                 <td>{entry.email}</td>
                 <td>{entry.number}</td>
+                <td>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      this.deleteUser(i);
+                    }}
+                  >
+                    deleteUser
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      this.Edituser(entry, i);
+                    }}
+                  >
+                    Edit user
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
