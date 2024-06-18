@@ -1,12 +1,13 @@
-// import "./Sample01.css";
 import { Component } from "react";
-import SimpleForm from "./Assignment-Component-Didmount/Sample01";
+import Customer from "./Application_Assignments/Customer";
+import FormComponent from "./CRUD Assignment-1/Sample4";
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <SimpleForm />
+        <Customer />
+        <FormComponent />
       </div>
     );
   }
