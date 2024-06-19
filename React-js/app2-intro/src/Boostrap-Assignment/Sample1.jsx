@@ -4,7 +4,8 @@ const User = () => {
   const [userDetails, setUserDetails] = useState({
     email: "",
     password: "",
-    role: "",
+    number: "",
+    adress: "",
   });
   const [allUsers, setAllUsers] = useState([]);
 
@@ -36,20 +37,17 @@ const User = () => {
     setUserDetails({
       email: "",
       password: "",
-      role: "",
+      number: "",
+      adress: "",
     });
   };
 
-  const { email, password, role } = userDetails;
+  const { email, password, number, adress } = userDetails;
 
   return (
     <div>
-      <nav className="navbar bg-primary" data-bs-theme="dark">
-        <div className="btn btn-success">
-          <a className="btn btn-dark" href="#">
-            Bootstrap
-          </a>
-        </div>
+      <nav className="" data-bs-theme="dark">
+        <h1> Form and Tables</h1>
       </nav>
       <div className="container ">
         <div className="row ">
@@ -84,26 +82,33 @@ const User = () => {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="" className="form-label">
-                  Role{" "}
+                <label htmlFor="exampleInputPassword1" className="form-label">
+                  number
                 </label>
-                <select
-                  className="form-select"
+                <input
+                  type="number"
+                  className="form-control"
                   onChange={(e) => {
                     handleChange(e);
                   }}
-                  name="role"
-                  value={role}
-                >
-                  <option value={""}>Role</option>
-                  <option value="Front End Developer">
-                    Front End Developer
-                  </option>
-                  <option value="Back End Developer">Back End Developer</option>
-                  <option value="Tester">Tester</option>
-                </select>
+                  name="number"
+                  value={number}
+                />
               </div>
-
+              <div className="mb-3">
+                <label htmlFor="exampleInputPassword1" className="form-label">
+                  Adress
+                </label>
+                <input
+                  type="adress"
+                  className="form-control"
+                  onChange={(e) => {
+                    handleChange(e);
+                  }}
+                  name="adress"
+                  value={adress}
+                />
+              </div>
               <button
                 type="button"
                 className="btn btn-primary"
@@ -119,7 +124,8 @@ const User = () => {
                 <tr>
                   <th>Email</th>
                   <th>Password</th>
-                  <th>Role</th>
+                  <th>number</th>
+                  <th>adress</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
@@ -130,7 +136,8 @@ const User = () => {
                     <tr key={index}>
                       <td>{usr.email}</td>
                       <td>{usr.password}</td>
-                      <td>{usr.role}</td>
+                      <td>{usr.number}</td>
+                      <td>{usr.adress}</td>
                       <td>
                         <button
                           className="btn btn-warning"
