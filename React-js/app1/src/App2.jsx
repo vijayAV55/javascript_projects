@@ -24,7 +24,7 @@ function App2() {
   return (
     <div>
       <h1>Chaild-components</h1>/
-      <BlogPostManager />
+      {/* <BlogPostManager />
       <CalendarAppointments />
       <ChatApplication />
       <EcommerceCart />
@@ -42,7 +42,7 @@ function App2() {
       <RecipeBook />
       <RecipeGenerator />
       <StudentEnrollmentSystem />
-      <SubscriptionService />
+      <SubscriptionService /> */}
     </div>
   );
 }

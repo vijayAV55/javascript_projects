@@ -23,27 +23,27 @@ import { WeatherApp } from "./Assignments-1/WeatherApp";
 function App() {
   return (
     <div>
-      <StudentEnrollmentSystem />
-      <MusicPlayer />
-      <RecipeBook />
-      <MovieDatabase />
-      <ChatApplication />
-      <InventoryManagementSystem />
-      <CalendarAppointments />
-      <GameCharacter />
-      <EcommerceCart />
-      <LanguageLearningApp />
-      <TaskTracker />
-      <WeatherApp />
-      <HotelReservationSystem />
-      <EmployeeTimeTracker />
-      <RecipeGenerator />
-      <FlightBookingSystem />
-      <MusicBandManager />
-      <BlogPostManage />
-      <FitnessChallengeTracke />
-      <RealEstateListings />
-      <ProjectManagementTool />
+      {/* //   <StudentEnrollmentSystem />
+    //   <MusicPlayer />
+    //   <RecipeBook />
+    //   <MovieDatabase />
+    //   <ChatApplication />
+    //   <InventoryManagementSystem />
+    //   <CalendarAppointments />
+    //   <GameCharacter />
+    //   <EcommerceCart />
+    //   <LanguageLearningApp />
+    //   <TaskTracker />
+    //   <WeatherApp />
+    //   <HotelReservationSystem />
+    //   <EmployeeTimeTracker />
+    //   <RecipeGenerator />
+    //   <FlightBookingSystem />
+    //   <MusicBandManager />
+    //   <BlogPostManage />
+    //   <FitnessChallengeTracke />
+    //   <RealEstateListings />
+    //   <ProjectManagementTool /> */}
     </div>
   );
 }
