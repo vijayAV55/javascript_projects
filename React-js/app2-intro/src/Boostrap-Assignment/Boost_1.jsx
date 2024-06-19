@@ -44,6 +44,8 @@ const User = () => {
 
   return (
     <div>
+      <br />
+      <br />
       <nav className="navbar bg-primary" data-bs-theme="dark">
         <div className="btn btn-success">
           <a className="btn btn-dark" href="#">
@@ -112,6 +114,8 @@ const User = () => {
                 Submit
               </button>
             </form>
+            <br />
+            <br />
           </div>
           <div className="col-9">
             <table className="table table-striped table-hover">

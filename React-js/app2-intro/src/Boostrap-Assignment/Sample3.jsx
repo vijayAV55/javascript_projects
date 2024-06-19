@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 const User = () => {
   const [userDetails, setUserDetails] = useState({
+    fname: "",
+    lname: "",
     email: "",
-    password: "",
-    number: "",
-    adress: "",
+    rollno: "",
+    id: "",
   });
   const [allUsers, setAllUsers] = useState([]);
 
@@ -31,84 +32,99 @@ const User = () => {
     setAllUsers(newAllUsers);
   };
 
-  // const updateUser = () => {};
-
   const clearForm = () => {
     setUserDetails({
+      fname: "",
+      lname: "",
       email: "",
-      password: "",
-      number: "",
-      adress: "",
+      rollno: "",
+      id: "",
     });
   };
 
-  const { email, password, number, adress } = userDetails;
+  const { fname, lname, email, rollno, id } = userDetails;
 
   return (
     <div>
-      <br />
+      <hr /> <br />
       <br />
       <nav className="" data-bs-theme="dark">
-        <h1> Form and Tables</h1>
+        <h1>vijayram</h1>
       </nav>
+      <br />
+      <br />
       <div className="container ">
         <div className="row ">
           <div className="col-3 ">
             <form>
               <div className="mb-3">
                 <label htmlFor="exampleInputEmail1" className="form-label">
-                  Email address
+                  First Name
+                </label>
+                <input
+                  type="fname"
+                  className="form-control"
+                  name="fname"
+                  value={fname}
+                  onChange={(e) => {
+                    handleChange(e);
+                  }}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="exampleInputPassword1" className="form-label">
+                  Last Name
+                </label>
+                <input
+                  type="lname"
+                  className="form-control"
+                  onChange={(e) => {
+                    handleChange(e);
+                  }}
+                  name="lname"
+                  value={lname}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="exampleInputPassword1" className="form-label">
+                  Email
                 </label>
                 <input
                   type="email"
                   className="form-control"
+                  onChange={(e) => {
+                    handleChange(e);
+                  }}
                   name="email"
                   value={email}
-                  onChange={(e) => {
-                    handleChange(e);
-                  }}
                 />
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleInputPassword1" className="form-label">
-                  Password
+                  Rollno
                 </label>
                 <input
-                  type="password"
+                  type="rollno"
                   className="form-control"
                   onChange={(e) => {
                     handleChange(e);
                   }}
-                  name="password"
-                  value={password}
+                  name="rollno"
+                  value={rollno}
                 />
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleInputPassword1" className="form-label">
-                  number
+                  Id
                 </label>
                 <input
-                  type="number"
+                  type="id"
                   className="form-control"
                   onChange={(e) => {
                     handleChange(e);
                   }}
-                  name="number"
-                  value={number}
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="exampleInputPassword1" className="form-label">
-                  Adress
-                </label>
-                <input
-                  type="adress"
-                  className="form-control"
-                  onChange={(e) => {
-                    handleChange(e);
-                  }}
-                  name="adress"
-                  value={adress}
+                  name="id"
+                  value={id}
                 />
               </div>
               <button
@@ -119,15 +135,16 @@ const User = () => {
                 Submit
               </button>
             </form>
-          </div>{" "}
+          </div>
           <div className="col-9">
             <table className="table table-striped table-hover">
               <thead>
                 <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
                   <th>Email</th>
-                  <th>Password</th>
-                  <th>number</th>
-                  <th>adress</th>
+                  <th>Rollno</th>
+                  <th>id</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
@@ -136,10 +153,11 @@ const User = () => {
                 {allUsers.map((usr, index) => {
                   return (
                     <tr key={index}>
+                      <td>{usr.fname}</td>
+                      <td>{usr.lname}</td>
                       <td>{usr.email}</td>
-                      <td>{usr.password}</td>
-                      <td>{usr.number}</td>
-                      <td>{usr.adress}</td>
+                      <td>{usr.rollno}</td>
+                      <td>{usr.id}</td>
                       <td>
                         <button
                           className="btn btn-warning"
