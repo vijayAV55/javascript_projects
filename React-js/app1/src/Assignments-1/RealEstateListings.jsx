@@ -1,24 +1,23 @@
-import { useState } from "react"
+import { useState } from "react";
 
-export function RealEstateListings(){
-    const [RealEstateListings] = useState ({
-        propertytype: "building",
-        price:"5000000",
-        location:"chittoor",
-      
+export function RealEstateListings() {
+  const [RealEstateListings] = useState({
+    propertytype: "building",
+    price: "5000000",
+    location: "chittoor",
 
-        listings: function () { }, 
-        removelistings: function () { }, 
-        listingsbycriteria: function () { }, 
+    listings: function () {},
+    removelistings: function () {},
+    listingsbycriteria: function () {},
+  });
 
-             
-    })
-
-    return <div>
-        <ul>
-            {Object.keys(RealEstateListings).map((key) => {
-                return <li>{RealEstateListings[key]}</li>
-            })}
-        </ul>
+  return (
+    <div>
+      <ul>
+        {Object.keys(RealEstateListings).map((key) => {
+          return <li>{RealEstateListings[key]}</li>;
+        })}
+      </ul>
     </div>
-    }
+  );
+}

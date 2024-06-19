@@ -1,4 +1,3 @@
-import { BlogPostManage } from "./Assignments-1/BlogPostManager";
 import { CalendarAppointments } from "./Assignments-1/CalendarAppointments";
 import { ChatApplication } from "./Assignments-1/ChatApplication";
 import { EcommerceCart } from "./Assignments-1/EcommerceCart";
@@ -23,27 +22,38 @@ import { WeatherApp } from "./Assignments-1/WeatherApp";
 function App() {
   return (
     <div>
-      {/* //   <StudentEnrollmentSystem />
-    //   <MusicPlayer />
-    //   <RecipeBook />
-    //   <MovieDatabase />
-    //   <ChatApplication />
-    //   <InventoryManagementSystem />
-    //   <CalendarAppointments />
-    //   <GameCharacter />
-    //   <EcommerceCart />
-    //   <LanguageLearningApp />
-    //   <TaskTracker />
-    //   <WeatherApp />
-    //   <HotelReservationSystem />
-    //   <EmployeeTimeTracker />
-    //   <RecipeGenerator />
-    //   <FlightBookingSystem />
-    //   <MusicBandManager />
-    //   <BlogPostManage />
-    //   <FitnessChallengeTracke />
-    //   <RealEstateListings />
-    //   <ProjectManagementTool /> */}
+      <StudentEnrollmentSystem /> <hr />
+      <MusicPlayer /> <hr />
+      <RecipeBook /> <hr />
+      <MovieDatabase /> <hr />
+      <ChatApplication /> <hr />
+      <InventoryManagementSystem /> <hr />
+      <CalendarAppointments /> <hr />
+      <GameCharacter /> <hr />
+      <EcommerceCart />
+      <hr />
+      <LanguageLearningApp />
+      <hr />
+      <TaskTracker />
+      <hr />
+      <WeatherApp />
+      <hr />
+      <HotelReservationSystem />
+      <hr />
+      <EmployeeTimeTracker />
+      <hr />
+      <RecipeGenerator />
+      <hr />
+      <FlightBookingSystem />
+      <hr />
+      <MusicBandManager />
+      <hr />
+      <FitnessChallengeTracke />
+      <hr />
+      <RealEstateListings />
+      <hr />
+      <ProjectManagementTool />
+      <hr />
     </div>
   );
 }

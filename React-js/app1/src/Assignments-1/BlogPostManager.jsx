@@ -1,9 +1,3 @@
-// const [BlogPostManage] = useState ({
-
-//     tags:"",
-//     createnewposts: function () { },
-//     editposts: function () { },
-//     deleteposts: function () { },
 import { useState } from "react";
 
 export const BlogPostManage = () => {
@@ -14,7 +8,7 @@ export const BlogPostManage = () => {
     content: "cenima",
   });
 
-  const [UsersInfo, setUsersInfo] = useState[("ram", "vijay", "guna", "hima")];
+  const [UsersInfo] = useState[("ram", "vijay", "guna", "hima")];
 
   const chengemyname = () => {
     setmyname("raguram");

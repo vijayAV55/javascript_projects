@@ -18,7 +18,7 @@ import { RecipeBook } from "./Assignment-functions/RecipeBook";
 import { RecipeGenerator } from "./Assignment-functions/RecipeGenerator";
 import { SubscriptionService } from "./Assignment-functions/SubscriptionService";
 
-function vijay() {
+function Vijay() {
   return (
     <div>
       <h1> functional Components</h1>
@@ -44,4 +44,4 @@ function vijay() {
     </div>
   );
 }
-export default vijay;
+export default Vijay;
