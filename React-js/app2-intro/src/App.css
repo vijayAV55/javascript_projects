@@ -1,6 +1,13 @@
 * {
-  background-color: bisque;
+  background-color: lightgoldenrodyellow;
+  color: blueviolet;
 }
-div {
+h1 {
   text-align: center;
+  color: greenyellow;
+}
+hr {
+  height: 10px;
+  color: blue;
+  bottom: 10px;
 }
