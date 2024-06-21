@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form action="">
+        <label for="">DOB : </label>
+        <input type="date" name="" id="dob">
+        <button type="button" onclick="calculateage()">CalculateAge</button>
+</body>
+<script>
+    function calculateage() {
+        var dob = new Date(document.getElementById("dob").value);
+        var today = new Date();
+        var differenceinmils =todaydate() - dob
+        var totalDays = differenceInMillis / 86400000
+
+        var totalHours = differenceInMillis - (24 * 86400000);
+        console.log(totalHours / 3600000)
+        console.log("Total Days ", totalDays)
+    }
+
+</script>
+
+</html>`
