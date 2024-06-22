@@ -44,7 +44,7 @@ const Nethaform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
 
         <div className="mb-3">
           <label htmlFor="" className="form-label">
-            contact
+            Number
           </label>
           <input
             type="number"

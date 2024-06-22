@@ -9,7 +9,7 @@ const Nethajitable = ({ allUsers, editUser, deleteUser }) => {
             <th>Name</th>
             <th>Email</th>
             <th>Password</th>
-            <th>contact</th>
+            <th>number</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -21,7 +21,7 @@ const Nethajitable = ({ allUsers, editUser, deleteUser }) => {
                 <td>{usr.name}</td>
                 <td>{usr.email}</td>
                 <td>{usr.password}</td>
-                <td>{usr.contact}</td>
+                <td>{usr.number}</td>
 
                 <td>
                   <button
