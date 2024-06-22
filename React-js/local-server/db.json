@@ -1,12 +1,10 @@
 {
-  "nethaji_form": [
+  "Nethaji_Form": [
     {
-      "fname": "nethaji",
-      "lname": "ram"
-    },
-    {
-      "fname": "vijay",
-      "lname": "kumar"
+      "name": "vijay"
     }
-  ]
+  ],
+  "Himadeep_Form": [],
+  "Sai_Form": [],
+  "Dinesh_Form": []
 }

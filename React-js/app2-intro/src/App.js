@@ -4,11 +4,11 @@ import "./App.css";
 // import Sample2 from "./Boostrap-Assignment/Sample2";
 // import Sample3 from "./Boostrap-Assignment/Sample3
 
-import Dineshform from "./CURD_Assignment/Dinesh_Form";
-import Himadeepform from "./CURD_Assignment/Himadeep_form";
+// import Dineshform from "./CURD_Assignment/Dinesh_Form";
+// import Himadeepform from "./CURD_Assignment/Himadeep_form";
 import Nethajiform from "./CURD_Assignment/Nethaji_Form";
-import Saiform from "./CURD_Assignment/Sai_Form";
-import Vijayform from "./CURD_Assignment/Vijay_Form";
+// import Saiform from "./CURD_Assignment/Sai_Form";
+// import Vijayform from "./CURD_Assignment/Vijay_Form";
 
 function App() {
   return (
@@ -19,16 +19,16 @@ function App() {
       <Sample2 />
       <Sample3 /> */}
       {/* <Sample4 /> */}
-      <Dineshform />
+      {/* <Dineshform />
       <hr />
       <Vijayform />
 
-      <hr />
+      <hr /> */}
       <Nethajiform />
       <hr />
-      <Saiform />
+      {/* <Saiform /> */}
       <hr />
-      <Himadeepform />
+      {/* <Himadeepform /> */}
       <hr />
     </div>
   );
