@@ -2,14 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import Saitable from "./Sai_Table";
+import Saiform from "./Sai_form";
 
-import Nethaform from "./Nethaji__ form";
-import Nethajitable from "./Nethaji_table";
-const Nethaji = () => {
+const Saiuser = () => {
   const [user, setUser] = useState({
     name: "",
     email: "",
-    password: "",
+    course: "",
     number: "",
   });
   const [allUsers, setAllUsers] = useState([]);
@@ -20,7 +20,7 @@ const Nethaji = () => {
     getUsersFromServer();
   }, []);
   const createUser = () => {
-    axios.post("http://localhost:4200/Nethaji_Form", user).then(() => {
+    axios.post("http://localhost:4200/Sai_user", user).then(() => {
       console.log("User Added Successfully !!!");
       clearUser();
       getUsersFromServer();
@@ -31,12 +31,12 @@ const Nethaji = () => {
     setIsEdit(true);
   };
   const deleteUser = (usr) => {
-    axios.delete("http://localhost:4200/Nethaji_Form" + usr.id).then(() => {
+    axios.delete("http://localhost:4200/Sai_user" + usr.id).then(() => {
       getUsersFromServer();
     });
   };
   const updateUser = () => {
-    axios.put("http://localhost:4200/Nethaji_Form" + user.id, user).then(() => {
+    axios.put("http://localhost:4200/Sai_user" + user.id, user).then(() => {
       getUsersFromServer();
       clearUser();
       setIsEdit(false);
@@ -46,12 +46,12 @@ const Nethaji = () => {
     setUser({
       name: "",
       email: "",
-      password: "",
+      course: "",
       number: "",
     });
   };
   const getUsersFromServer = () => {
-    axios.get(" http://localhost:4200/Nethaji_Form  ").then(({ data }) => {
+    axios.get("http://localhost:4200/Sai_user ").then(({ data }) => {
       setAllUsers(data);
     });
   };
@@ -65,7 +65,7 @@ const Nethaji = () => {
     <div className="container">
       <div className="row">
         <div className="col-4">
-          <Nethaform
+          <Saiform
             handleChange={handleChange}
             user={user}
             createUser={createUser}
@@ -74,7 +74,7 @@ const Nethaji = () => {
           />
         </div>
         <div className="col-8">
-          <Nethajitable
+          <Saitable
             allUsers={allUsers}
             editUser={editUser}
             deleteUser={deleteUser}
@@ -85,4 +85,4 @@ const Nethaji = () => {
   );
 };
 
-export default Nethaji;
+export default Saiuser;

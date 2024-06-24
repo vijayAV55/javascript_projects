@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
+const Saiform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
   return (
     <div>
       <form>
@@ -31,26 +31,26 @@ const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
         </div>
         <div className="mb-3">
           <label htmlFor="exampleInputPassword1" className="form-label">
-            Password
+            course
           </label>
           <input
-            type="password"
+            type="course"
             className="form-control"
-            value={user.password}
-            name="password"
+            value={user.course}
+            name="course"
             onChange={handleChange}
           />
         </div>
 
         <div className="mb-3">
           <label htmlFor="" className="form-label">
-            dateofjoind
+            Number
           </label>
           <input
-            type="text"
+            type="number"
             className="form-control"
-            value={user.dateofjoind}
-            name="dateofjoind"
+            value={user.number}
+            name="contact"
             onChange={handleChange}
           />
         </div>
@@ -76,4 +76,4 @@ const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
   );
 };
 
-export default Dineshform;
+export default Saiform;

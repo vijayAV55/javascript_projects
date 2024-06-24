@@ -1,16 +1,17 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+
+import Dineshform from "./Dinesh_Form";
+import Dinesh_table from "./Dinesh_Table";
 import axios from "axios";
 
-import Nethaform from "./Nethaji__ form";
-import Nethajitable from "./Nethaji_table";
-const Nethaji = () => {
+const Dineshuser = () => {
   const [user, setUser] = useState({
     name: "",
     email: "",
     password: "",
-    number: "",
+    dateofjoind: "",
   });
   const [allUsers, setAllUsers] = useState([]);
 
@@ -20,7 +21,7 @@ const Nethaji = () => {
     getUsersFromServer();
   }, []);
   const createUser = () => {
-    axios.post("http://localhost:4200/Nethaji_Form", user).then(() => {
+    axios.post("http://localhost:4200/dinesh_user", user).then(() => {
       console.log("User Added Successfully !!!");
       clearUser();
       getUsersFromServer();
@@ -31,12 +32,12 @@ const Nethaji = () => {
     setIsEdit(true);
   };
   const deleteUser = (usr) => {
-    axios.delete("http://localhost:4200/Nethaji_Form" + usr.id).then(() => {
+    axios.delete("http://localhost:4200/dinesh_user" + usr.id).then(() => {
       getUsersFromServer();
     });
   };
   const updateUser = () => {
-    axios.put("http://localhost:4200/Nethaji_Form" + user.id, user).then(() => {
+    axios.put("http://localhost:4200/dinesh_user" + user.id, user).then(() => {
       getUsersFromServer();
       clearUser();
       setIsEdit(false);
@@ -47,11 +48,11 @@ const Nethaji = () => {
       name: "",
       email: "",
       password: "",
-      number: "",
+      dateofjoind: "",
     });
   };
   const getUsersFromServer = () => {
-    axios.get(" http://localhost:4200/Nethaji_Form  ").then(({ data }) => {
+    axios.get(" http://localhost:4200/dinesh_user  ").then(({ data }) => {
       setAllUsers(data);
     });
   };
@@ -65,7 +66,7 @@ const Nethaji = () => {
     <div className="container">
       <div className="row">
         <div className="col-4">
-          <Nethaform
+          <Dineshform
             handleChange={handleChange}
             user={user}
             createUser={createUser}
@@ -74,7 +75,7 @@ const Nethaji = () => {
           />
         </div>
         <div className="col-8">
-          <Nethajitable
+          <Dinesh_table
             allUsers={allUsers}
             editUser={editUser}
             deleteUser={deleteUser}
@@ -85,4 +86,4 @@ const Nethaji = () => {
   );
 };
 
-export default Nethaji;
+export default Dineshuser;

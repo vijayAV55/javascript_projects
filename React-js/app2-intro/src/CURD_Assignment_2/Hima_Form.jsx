@@ -1,6 +1,12 @@
 import React from "react";
 
-const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
+const Himadeep_Form = ({
+  handleChange,
+  user,
+  createUser,
+  isEdit,
+  updateUser,
+}) => {
   return (
     <div>
       <form>
@@ -14,6 +20,7 @@ const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
             value={user.name}
             name="name"
             onChange={handleChange}
+            placeholder="Enter Your name"
           />
         </div>
 
@@ -27,6 +34,7 @@ const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
             value={user.email}
             name="email"
             onChange={handleChange}
+            placeholder="Enter your E-mail"
           />
         </div>
         <div className="mb-3">
@@ -39,19 +47,21 @@ const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
             value={user.password}
             name="password"
             onChange={handleChange}
+            placeholder="Enter your password"
           />
         </div>
 
         <div className="mb-3">
           <label htmlFor="" className="form-label">
-            dateofjoind
+            Number
           </label>
           <input
             type="text"
             className="form-control"
-            value={user.dateofjoind}
-            name="dateofjoind"
+            value={user.number}
+            name="contact"
             onChange={handleChange}
+            placeholder="Enter your phone number "
           />
         </div>
         {isEdit ? (
@@ -76,4 +86,4 @@ const Dineshform = ({ handleChange, user, createUser, isEdit, updateUser }) => {
   );
 };
 
-export default Dineshform;
+export default Himadeep_Form;

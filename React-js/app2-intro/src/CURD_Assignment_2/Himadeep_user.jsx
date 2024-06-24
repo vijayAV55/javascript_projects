@@ -2,10 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import Himadeep_Form from "./Hima_Form";
+import Himadeep_Table from "./Hima_Table";
 
-import Nethaform from "./Nethaji__ form";
-import Nethajitable from "./Nethaji_table";
-const Nethaji = () => {
+const Himadeep_user = () => {
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -20,7 +20,7 @@ const Nethaji = () => {
     getUsersFromServer();
   }, []);
   const createUser = () => {
-    axios.post("http://localhost:4200/Nethaji_Form", user).then(() => {
+    axios.post("http://localhost:4200/himadeep_user", user).then(() => {
       console.log("User Added Successfully !!!");
       clearUser();
       getUsersFromServer();
@@ -31,16 +31,18 @@ const Nethaji = () => {
     setIsEdit(true);
   };
   const deleteUser = (usr) => {
-    axios.delete("http://localhost:4200/Nethaji_Form" + usr.id).then(() => {
+    axios.delete("http://localhost:4200/himadeep_user" + usr.id).then(() => {
       getUsersFromServer();
     });
   };
   const updateUser = () => {
-    axios.put("http://localhost:4200/Nethaji_Form" + user.id, user).then(() => {
-      getUsersFromServer();
-      clearUser();
-      setIsEdit(false);
-    });
+    axios
+      .put("http://localhost:4200/himadeep_user" + user.id, user)
+      .then(() => {
+        getUsersFromServer();
+        clearUser();
+        setIsEdit(false);
+      });
   };
   const clearUser = () => {
     setUser({
@@ -51,7 +53,7 @@ const Nethaji = () => {
     });
   };
   const getUsersFromServer = () => {
-    axios.get(" http://localhost:4200/Nethaji_Form  ").then(({ data }) => {
+    axios.get(" http://localhost:4200/himadeep_user ").then(({ data }) => {
       setAllUsers(data);
     });
   };
@@ -65,7 +67,7 @@ const Nethaji = () => {
     <div className="container">
       <div className="row">
         <div className="col-4">
-          <Nethaform
+          <Himadeep_Form
             handleChange={handleChange}
             user={user}
             createUser={createUser}
@@ -74,7 +76,7 @@ const Nethaji = () => {
           />
         </div>
         <div className="col-8">
-          <Nethajitable
+          <Himadeep_Table
             allUsers={allUsers}
             editUser={editUser}
             deleteUser={deleteUser}
@@ -85,4 +87,4 @@ const Nethaji = () => {
   );
 };
 
-export default Nethaji;
+export default Himadeep_user;
