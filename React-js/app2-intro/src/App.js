@@ -1,21 +1,12 @@
 import "./App.css";
-import Dinesh_user from "./CURD_Assignment/Dinesh_user";
-import Nethaji from "./CURD_Assignment/Nethaji_Form";
-import Himadeep_user from "./CURD_Assignment_2/Himadeep_user";
-import Saiuser from "./CURD_Assignment_2/Sai_user";
-import Vijay_user from "./CURD_Assignment_2/Vijay_user";
+import Hari_Form from "./CURD-Assignment-3/Hari_Form";
+import Hari_table from "./CURD-Assignment-3/Hari_table";
+import Hari_user from "./CURD-Assignment-3/Hari_user";
 
 function App() {
   return (
     <div>
-      {/* <Vijay_user />
-      <Nethaji />
-      <hr />
-      <Saiuser /> */}
-      <hr />
-      {/* <Dinesh_user /> */}
-      <hr />
-      <Himadeep_user />
+      <h1>vijay</h1>
     </div>
   );
 }
