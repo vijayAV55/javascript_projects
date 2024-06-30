@@ -1,20 +1,55 @@
 import React from "react";
 
-function Hari_table() {
+const Himadeep_Table = ({ allUsers, editUser, deleteUser }) => {
   return (
     <div>
-      <h1>Hari_table</h1>
-      <table border={2}>
+      <table className="table table-striped table-hover">
         <thead>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Adress</th>
-          <th>Number</th>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>number</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
         </thead>
-        <tbody> </tbody>
+        <tbody>
+          {allUsers.map((usr, i) => {
+            return (
+              <tr key={i}>
+                <td>{usr.name}</td>
+                <td>{usr.email}</td>
+                <td>{usr.password}</td>
+                <td>{usr.number}</td>
+
+                <td>
+                  <button
+                    className="btn btn-warning"
+                    onClick={() => {
+                      editUser(usr);
+                    }}
+                  >
+                    Edit
+                  </button>
+                </td>
+                <td>
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => {
+                      deleteUser(usr);
+                    }}
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );
-}
+};
 
-export default Hari_table;
+export default Himadeep_Table;
