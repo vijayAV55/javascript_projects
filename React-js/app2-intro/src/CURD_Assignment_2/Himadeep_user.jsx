@@ -31,13 +31,13 @@ const Himadeep_user = () => {
     setIsEdit(true);
   };
   const deleteUser = (usr) => {
-    axios.delete("http://localhost:4200/himadeep_user" + usr.id).then(() => {
+    axios.delete("http://localhost:4200/himadeep_user/" + usr.id).then(() => {
       getUsersFromServer();
     });
   };
   const updateUser = () => {
     axios
-      .put("http://localhost:4200/himadeep_user" + user.id, user)
+      .put("http://localhost:4200/himadeep_user/" + user.id, user)
       .then(() => {
         getUsersFromServer();
         clearUser();
@@ -53,7 +53,7 @@ const Himadeep_user = () => {
     });
   };
   const getUsersFromServer = () => {
-    axios.get(" http://localhost:4200/himadeep_user ").then(({ data }) => {
+    axios.get(" http://localhost:4200/himadeep_user").then(({ data }) => {
       setAllUsers(data);
     });
   };

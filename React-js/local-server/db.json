@@ -1,94 +1,10 @@
 {
-  "vijay_user": [
+  "Hari": [
     {
-      "fname": "vijay",
-      "lname": "ram",
-      "id": "1"
-    }
-  ],
-  "Nethaji_Form": [
-    {
-      "name": "nethaji",
-      "id": "505d"
-    },
-    {
-      "id": "adfb",
-      "name": "vijay",
-      "email": "vijayguna9160@gmail.com",
-      "password": "fgtyhuik",
-      "number": "",
-      "contact": "9640744182"
-    },
-    {
-      "id": "f5af",
-      "name": "",
-      "email": "",
-      "password": "",
-      "number": ""
-    },
-    {
-      "id": "b64a",
-      "name": "wertyui",
-      "email": "dfghjk",
-      "password": "dfghjk",
-      "dateofjoind": "",
-      "contact": "6"
-    }
-  ],
-  "Sai_user": [
-    {
-      "name": "sai",
-      "id": "e166"
-    },
-    {
-      "id": "75ff",
-      "name": "fghjk",
-      "email": "vijayguna9160@gmail.com",
-      "course": "ghjkl",
-      "number": "",
-      "contact": "8"
-    }
-  ],
-  "dinesh_user": [
-    {
-      "name": "diensh",
-      "id": "3dec"
-    },
-    {
-      "id": "b0d1",
-      "name": "dinesh",
-      "email": "vijayguna9160@gmail.com",
-      "password": "12345678",
-      "dateofjoind": "",
-      "contact": "4"
-    }
-  ],
-  "himadeep_user": [
-    {
-      "name": "himadeep",
-      "id": "e3ae"
-    },
-    {
-      "id": "d357",
-      "name": "himadeep",
-      "email": "vijayguna9160@gmail.com",
-      "password": "23456789",
-      "number": "",
-      "contact": "5"
-    },
-    {
-      "id": "3e5a",
-      "name": "",
-      "email": "",
-      "password": "",
-      "number": ""
-    },
-    {
-      "id": "a0de",
-      "name": "",
-      "email": "",
-      "password": "",
-      "number": ""
+      "fname": "ddd",
+      "id": "070d",
+      "age": "66",
+      "lname": "hh"
     }
   ]
 }
