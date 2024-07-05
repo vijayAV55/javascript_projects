@@ -1,0 +1,50 @@
+#Main {
+  width: 1100px;
+  height: 900px;
+  background-color: lightcoral;
+  display: flex;
+  color: yellow;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+#GrandParent {
+  width: 900px;
+  height: 700px;
+  background-color: lightgreen;
+  color: green;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+#Parent {
+  width: 700px;
+  height: 600px;
+  background-color: yellow;
+  color: yellow;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+#GrandChild {
+  width: 600px;
+  height: 400px;
+  background-color: blueviolet;
+  color: yellow;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+#Child {
+  width: 500px;
+  height: 300px;
+  background-color: blue;
+
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}

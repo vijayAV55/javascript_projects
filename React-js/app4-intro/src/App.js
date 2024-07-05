@@ -1,10 +1,11 @@
 import "./App.css";
 import Counter_component from "./Counters-Assignment/Counter_component";
+import Main from "./Counters-Assignment/MainCounter/Main";
 
 function App() {
   return (
     <div className="App">
-      <Counter_component />
+      <Main />
     </div>
   );
 }
