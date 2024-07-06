@@ -6,9 +6,8 @@ function ClickCounter(props) {
 
   return (
     <div>
-      <header className="App-header">
-        <h1 id="Context_API">Higher Order Component</h1>
-      </header>
+      <h1 id="Context_API">Higher Order Component</h1>
+
       <h1>You clicked {count} times !!!</h1>
       <button
         className="btn btn-primary"
