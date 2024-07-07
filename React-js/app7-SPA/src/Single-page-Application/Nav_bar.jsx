@@ -21,6 +21,21 @@ const Nav_bar = () => {
               Contact
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to={"/form"} className="nav-item">
+              Form{" "}
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to={"/login"} className="nav-item">
+              login
+            </Link>
+          </li>{" "}
+          <li className="nav-item">
+            <Link to={"/table"} className="nav-item">
+              Table{" "}
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
