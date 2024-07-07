@@ -22,6 +22,9 @@ const Main_Sap = () => {
           <Route path="login" element={<Login />}></Route>
         </Routes>
       </Router>
+      <br />
+      <br />
+      <hr />
     </div>
   );
 };
