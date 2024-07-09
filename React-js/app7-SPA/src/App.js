@@ -1,8 +1,6 @@
 import "./App.css";
-import Main_Protector from "./Protector-Route/Main_Protector";
-import User from "./Protector-Route/User";
-import Main_Component from "./SPA-2/Main_Component";
-import Main_Sap from "./Single-page-Application/Main_Sap";
+import Main_Lazy from "./Lazy-loading/Main_Lazy";
+import Main_Dashboard from "./Nexted-Routing/Dash-Board/Main_Dashboard";
 
 function App() {
   return (
@@ -10,9 +8,9 @@ function App() {
       <header className="App-header">
         <h1 className="page">Single page Application</h1>
       </header>
-      {/* <Main_Sap />
-      <Main_Component /> */}
-      <Main_Protector></Main_Protector>
+
+      <Main_Lazy />
+      <Main_Dashboard />
     </div>
   );
 }
