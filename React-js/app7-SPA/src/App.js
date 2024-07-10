@@ -9,7 +9,10 @@ function App() {
         <h1 className="page">Single page Application</h1>
       </header>
 
-      <Main_Lazy />
+      {/* <Main_Lazy /> */}
+
+      <br />
+      <hr />
       <Main_Dashboard />
     </div>
   );
