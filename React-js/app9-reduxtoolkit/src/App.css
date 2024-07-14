@@ -1,0 +1,9 @@
+.App-header {
+  background-color: lightgreen !important;
+  color: #2867e4 !important;
+  text-align: left !important;
+}
+.App {
+  text-align: center;
+  background-color: hsl(297, 72%, 63%);
+}

@@ -1,0 +1,21 @@
+li {
+  list-style: none;
+  padding: 10px;
+}
+#ram {
+  margin-top: 10px;
+  width: 200px;
+}
+
+input {
+  width: 250px;
+  background-color: #22df74;
+  color: aliceblue;
+}
+.name {
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: aqua;
+  color: rgb(99, 26, 237);
+}

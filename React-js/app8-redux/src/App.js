@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Main from "./Redux-Components/Main_Redux";
 
 function App() {
   return (
     <div className="App">
-      <Main />
+      <h1>vijay</h1>
     </div>
   );
 }

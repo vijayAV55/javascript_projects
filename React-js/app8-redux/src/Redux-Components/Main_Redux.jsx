@@ -1,19 +1,11 @@
 import React from "react";
-import { Provider } from "react-redux";
-import store from "./redux/store";
-import UserList from "./components/UserList";
-import AddUser from "./components/AddUser";
 
-function Main() {
+const Main_Redux = () => {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <h1>User Management</h1>
-        <AddUser />
-        <UserList />
-      </div>
-    </Provider>
+    <div>
+      <h1>welcome redux component!!!</h1>
+    </div>
   );
-}
+};
 
-export default Main;
+export default Main_Redux;
