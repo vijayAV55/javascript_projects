@@ -18,7 +18,7 @@ export const getUserFormServer = createAsyncThunk(
 export const deleteUserFromServer = createAsyncThunk(
   "users/deleteUserFromServer",
   async (user) => {
-    const response = await fetch("http://localhost:3000/Hari/" + user.id, {
+    const response = await fetch("http://localhost:3000/Hari" + user.id, {
       method: "DELETE",
     });
     return await getAllUsers();
