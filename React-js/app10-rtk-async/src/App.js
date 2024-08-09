@@ -1,4 +1,5 @@
 import "./App.css";
+import Sample1 from "./Practices/Sample1";
 import Main1 from "./REDUX01/Main1";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <Main1 />
+      <Sample1 />
     </div>
   );
 }
