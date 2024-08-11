@@ -1,0 +1,70 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.calculator h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.calculator span {
+  color: #ff6347;
+  font-size: 28px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.input-box button:hover {
+  background-color: #ff4500;
+}
+
+#result {
+  font-size: 18px;
+  color: #333;
+}
