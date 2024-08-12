@@ -1,9 +1,9 @@
-import AgeCalculator from "./Age-caluclate/Age_calculate";
+import DigitalClock from "./DigitalClock/DigitalClock";
 
 function App() {
   return (
     <div className="App">
-      <AgeCalculator />
+      <DigitalClock />
     </div>
   );
 }
