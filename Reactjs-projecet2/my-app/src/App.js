@@ -1,9 +1,12 @@
-import DigitalClock from "./DigitalClock/DigitalClock";
+// import DigitalClock from "./DigitalClock/DigitalClock";
+
+import QRCodeGenerator from "./QR-Code-Generator/QRCodeGenerator";
 
 function App() {
   return (
     <div className="App">
-      <DigitalClock />
+      {/* <DigitalClock /> */}
+      <QRCodeGenerator />
     </div>
   );
 }
