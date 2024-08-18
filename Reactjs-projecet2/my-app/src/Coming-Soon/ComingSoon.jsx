@@ -41,7 +41,7 @@ const ComingSoon = () => {
     <div className="container">
       <img src={logo} alt="Logo" className="logo" />
       <div className="content">
-        <p>Website Is Under Maintenance</p>
+        <p>Website is Under Maintenance</p>
         <h2>
           We're <span>Launching</span> Soon
         </h2>
