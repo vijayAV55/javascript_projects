@@ -13,14 +13,12 @@ const ComingSoon = () => {
   });
 
   useEffect(() => {
-    // Set the target date for the countdown (example date: May 30, 2024, at midnight)
     const countDownDate = new Date("August 20, 2024 00:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countDownDate - now;
 
-      // Calculate time left
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -28,17 +26,14 @@ const ComingSoon = () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Update state with time left
       setTimeLeft({ days, hours, minutes, seconds });
 
-      // Stop the countdown when the time is up
       if (distance < 0) {
         clearInterval(interval);
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     }, 1000);
 
-    // Cleanup interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
