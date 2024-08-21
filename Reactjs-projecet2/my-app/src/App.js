@@ -1,6 +1,8 @@
 // import DigitalClock from "./DigitalClock/DigitalClock";
 
-import ComingSoon from "./Coming-Soon/ComingSoon";
+// import ComingSoon from "./Coming-Soon/ComingSoon";
+
+import SongList from "./Songs/SongList";
 
 // import MiniCalendar from "./Mini-Calendar/MiniCalendar";
 
@@ -12,7 +14,8 @@ function App() {
       {/* <DigitalClock /> */}
       {/* <QRCodeGenerator /> */}
       {/* <MiniCalendar /> */}
-      <ComingSoon />
+      {/* <ComingSoon /> */}
+      <SongList />
     </div>
   );
 }
