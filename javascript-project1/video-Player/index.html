@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Video Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="video-container">
+      <video id="videoPlayer" width="640" height="360" controls>
+        <source
+          src="./WhatsApp Video 2024-08-21 at 19.26.17_13ac5a66.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="controls">
+        <button id="playPauseBtn">Play</button>
+        <input
+          type="range"
+          id="volumeSlider"
+          min="0"
+          max="1"
+          step="0.1"
+          value="1"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
