@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="productdetails.css" />
+  </head>
+  <body>
+    <div class="product-details-container">
+      <div class="product-image-section">
+        <img
+          id="main-product-image"
+          src="imgs/image1.png"
+          ,
+          alt="Casual T Shirt"
+        />
+      </div>
+      <div class="product-info-section">
+        <h1 class="product-title">Casual T Shirt</h1>
+        <p class="product-price">
+          $15.00 <span class="discount-text">30% OFF</span>
+        </p>
+        <p class="product-description">
+          Wrangler is an American manufacturer of jeans and other clothing
+          items, particularly workwear.
+        </p>
+        <div class="size-options">
+          <span>Size: </span>
+          <label><input type="radio" name="size" value="S" /> S</label>
+          <label><input type="radio" name="size" value="M" /> M</label>
+          <label><input type="radio" name="size" value="L" checked /> L</label>
+          <label><input type="radio" name="size" value="XL" /> XL</label>
+          <label><input type="radio" name="size" value="XXL" /> XXL</label>
+        </div>
+        <div class="quantity-section">
+          <span>Quantity:</span>
+          <input type="number" id="quantity" value="1" min="1" />
+        </div>
+        <button id="buy-now-button">Buy Now</button>
+      </div>
+    </div>
+    <script src="product.js"></script>
+  </body>
+</html>
