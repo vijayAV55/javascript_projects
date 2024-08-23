@@ -3,8 +3,8 @@
 // import SongList from "./Songs/SongList";
 // import MiniCalendar from "./Mini-Calendar/MiniCalendar";
 // import QRCodeGenerator from "./QR-Code-Generator/QRCodeGenerator";
-// import EmailSubscription from "./EmailSubscription/EmailSubscription";
-import Stopwatch from "./Stopwatch/Stopwatch";
+import EmailSubscription from "./EmailSubscription/EmailSubscription";
+// import Stopwatch from "./Stopwatch/Stopwatch";
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       {/* <MiniCalendar /> */}
       {/* <ComingSoon /> */}
       {/* <SongList /> */}
-      {/* <EmailSubscription /> */}
-      <Stopwatch />
+      <EmailSubscription />
+      {/* <Stopwatch /> */}
     </div>
   );
 }
