@@ -33,3 +33,18 @@ body {
   border-bottom: 1px rgb(100, 100, 100);
   height: 70%;
 }
+.upersideTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.midBtn {
+  background: #5a4bff;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+.addBtn {
+  height: 2rem;
+}

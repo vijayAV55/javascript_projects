@@ -11,7 +11,7 @@ const Main_Clone = () => {
     <div className="App">
       <div className="sidebar">
         <div className="upperside">
-          <div className="upersidetop">
+          <div className="upersideTop">
             <img src={gptLogo} alt="" className="logo" />{" "}
             <span className="brand">ChatGPT</span> <br />
             <button className="midBtn">
