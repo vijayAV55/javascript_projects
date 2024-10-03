@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.phone {
+  width: 200px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.screen {
+  margin-bottom: 20px;
+}
+
+#display {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: right;
+}
+
+.keypad button {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+.keypad button:active {
+  background-color: #777;
+}
